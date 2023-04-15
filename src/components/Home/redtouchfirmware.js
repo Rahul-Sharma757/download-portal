@@ -77,7 +77,7 @@ const redtouchfirmware = (props) => {
                       target="_blank"
                       onClick={() =>
                         props.directdownloadlink(
-                          "https://downloads.smallhd.com/dev/backend-node-server/firmware/redtouch/SmallHD_RED_Touch_Firmware_V5.1.0.zip"
+                          "https://downloads.smallhd.com/dev/backend-node-server/firmware/redtouch/SmallHD_RED_Touch_Firmware_V5.4.0.zip"
                         )
                       }
                       className="btn btn-primary text-white"
@@ -799,7 +799,7 @@ const redtouchfirmware = (props) => {
                   target="_blank"
                   onClick={() =>
                     props.directdownloadlink(
-                      "https://downloads.smallhd.com/dev/backend-node-server/firmware/redtouch/SmallHD_RED_Touch_Firmware_V5.1.0.zip"
+                      "https://downloads.smallhd.com/dev/backend-node-server/firmware/redtouch/SmallHD_RED_Touch_Firmware_V5.4.0.zip"
                     )
                   }
                   className="btn btn-primary text-white"
