@@ -345,7 +345,7 @@ a:hover{ text-decoration:none; }
 .footer .nav li a{ color: #939598; line-height: 25px; font-weight: 400;}
 .footer .nav li a:hover{ color: #e6e6e6;}
 .footer .footer-social-media{ list-style: none; padding: 0; margin: 0;}
-.footer .footer-social-media li{}
+/* .footer .footer-social-media li{} */
 .footer .footer-social-media a{ font-size: 2em; color: #939598;}
 .footer .footer-social-media a:hover{ color:#e6e6e6; }
 .footer .footer-social-media a i{ margin: 10px;}
@@ -366,7 +366,7 @@ a:hover{ text-decoration:none; }
 .form-check-input{ margin-top: 0.1rem;}
  .modal-header{ position: relative;}
  .modal-dialog{ max-width: 800px; width: 100%; margin: 0 auto;}
- .modal{ padding: 0 15px;}
+ .modal{ padding: 0 15px; overflow-x: hidden; overflow-y: auto;}
 .modal-header .close{ outline: none; top: 50%; transform: translateY(-50%); display: none;
   right: 0px;
   opacity: 1;}
