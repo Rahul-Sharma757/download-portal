@@ -3,6 +3,144 @@ import RegistrationPopup from "../Common/RegistrationPopup";
 const redtouchfirmware = (props) => {
   return (
     <>
+     <div className="row">
+        <div className="col-lg-8 mb-lg-5">
+          <h2>
+            DSMC3™ <strong>RED® Touch</strong>{" "}
+            <span>7.0" LCD Firmware v5.4.1</span>
+          </h2>
+          <div className="card  mb-5 ">
+            <div className="card-body">
+              <div className="row align-items-center">
+                <div className="col-lg-12">
+                  <div className="row mb-3">
+                    <div className="col-md-3">
+                      <h3 className="text-dark">
+                        <small className="d-block mb-3 text-black-50">
+                          Version
+                        </small>{" "}
+                        <span>5.4.1</span>
+                      </h3>
+                    </div>
+                    <div className="col-md-5 d-none">
+                      <h3 className="text-dark">
+                        <small className="d-block mb-3 text-black-50">
+                          Build
+                        </small>
+                        --
+                      </h3>
+                    </div>
+                    <div className="col-md-4">
+                      <h3 className="text-dark">
+                        <small className="d-block mb-3 text-black-50">
+                          Updated on
+                        </small>{" "}
+                        2023-05-08
+                      </h3>
+                    </div>
+                  </div>
+                  <div>
+                    <h2>
+                      <strong>Firmware update Best practices:</strong>
+                    </h2>
+                    <ul>
+                      <li>SD card 2,4,8,16GB</li>
+                      <li>Backup your profile before update (recommended)</li>
+                      <li>Use AC power or fully charged battery</li>
+                      <li>Note older version of firmware before update</li>
+                    </ul>
+                    <h2>
+                      <strong>Firmware Compatibility:</strong>
+                    </h2>
+                    <ul>
+                      <li>
+                        This firmware is compatible with the DSMC3 RED® Touch
+                        7.0" LCD
+                      </li>
+                      <li>
+                        This firmware <strong>is not compatible with</strong>{" "}
+                        other SmallHD or RED® Touch monitors
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="btn-col">
+                    {/*<a href="#" className="btn btn-outline-dark">Learn More</a>*/}
+                    <button
+                      type="button"
+                      className="btn btn-outline-dark"
+                      data-toggle="modal"
+                      data-target="#RedModal-v5-4-1-main"
+                    >
+                      Learn More
+                    </button>
+                    <a
+                      target="_blank"
+                      onClick={() =>
+                        props.directdownloadlink(
+                          "https://downloads.smallhd.com/dev/backend-node-server/firmware/redtouch/SmallHD_RED_Touch_Firmware_V5.4.1.zip"
+                        )
+                      }
+                      className="btn btn-primary text-white"
+                    >
+                      Download 
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-lg-4  mb-lg-5">
+          <h2>
+            <span>DSMC3™ <strong>RED® Touch</strong> 7.0" LCD Firmware v5.0.0 Beta-1</span>
+          </h2>
+          <div className="card ">
+            <div className="card-body">
+              <div className="row mb-3">
+                <div className="col-md-8">
+                  <h3 className="text-dark">
+                    <small className="d-block mb-3 text-black-50">
+                      Updated on
+                    </small>{" "}
+                    23rd June, 2022
+                  </h3>
+                </div>
+              </div>
+              <h2>
+                <strong>Firmware update Best practices:</strong>
+              </h2>
+              <ul>
+                <li>SD card 2,4,8,16GB</li>
+                <li>Backup your profile before update (recommended)</li>
+                <li>Use AC power or fully charged battery</li>
+                <li>Note older version of firmware before update</li>
+              </ul>
+              <div className="btn-col">
+                {/*<a href="#" className="btn btn-outline-dark">Learn More</a>*/}
+                <button
+                  type="button"
+                  className="btn btn-outline-dark"
+                  data-toggle="modal"
+                  data-target="#RedModal-v5-main"
+                >
+                  Learn More
+                </button>
+                <a
+                  target="_blank"
+                  onClick={() =>
+                    props.directdownloadlink(
+                      "https://downloads.smallhd.com/dev/backend-node-server/firmware/redtouch/SmallHD_RED_Touch_Firmware_V5.0.0-main.zip"
+                    )
+                  }
+                  className="btn btn-primary text-white"
+                >
+                  Download
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     <div className="row">
         <div className="col-lg-8 mb-lg-5">
           <h2>
@@ -367,367 +505,85 @@ const redtouchfirmware = (props) => {
           </div>
         </div>
       </div>
-      <h2>
-        DSMC3™ <strong>RED® Touch</strong> <span>7.0" LCD Firmware v4.8.3</span>
-      </h2>
-      <div className="row">
-        <div className="col-lg-12 mb-lg-5">
-          <div className="card  mb-5 ">
-            <div className="card-body">
-              <div className="row align-items-center">
-                <div className="col-lg-12">
-                  <div className="row mb-3">
-                    <div className="col-md-3">
-                      <h3 className="text-dark">
-                        <small className="d-block mb-3 text-black-50">
-                          Version
-                        </small>{" "}
-                        <span>4.8.3</span>
-                      </h3>
-                    </div>
-                    <div className="col-md-5 d-none">
-                      <h3 className="text-dark">
-                        <small className="d-block mb-3 text-black-50">
-                          Build
-                        </small>
-                        --
-                      </h3>
-                    </div>
-                    <div className="col-md-4">
-                      <h3 className="text-dark">
-                        <small className="d-block mb-3 text-black-50">
-                          Updated on
-                        </small>{" "}
-                        2022-03-29
-                      </h3>
-                    </div>
-                  </div>
-                  <div>
-                    <h2>
-                      <strong>Firmware update Best practices:</strong>
-                    </h2>
-                    <ul>
-                      <li>SD card 2,4,8,16GB</li>
-                      <li>Backup your profile before update (recommended)</li>
-                      <li>Use AC power or fully charged battery</li>
-                      <li>Note older version of firmware before update</li>
-                    </ul>
-                    <h2>
-                      <strong>Firmware Compatibility:</strong>
-                    </h2>
-                    <ul>
-                      <li>
-                        This firmware is compatible with the DSMC3 RED® Touch
-                        7.0" LCD
-                      </li>
-                      <li>
-                        This firmware <strong>is not compatible with</strong>{" "}
-                        other SmallHD or RED® Touch monitors
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="btn-col">
-                    {/*<a href="#" className="btn btn-outline-dark">Learn More</a>*/}
-                    <button
-                      type="button"
-                      className="btn btn-outline-dark"
-                      data-toggle="modal"
-                      data-target="#RedModal-v3"
-                    >
-                      Learn More
-                    </button>
-                    <a
-                      target="_blank"
-                      onClick={() =>
-                        props.directdownloadlink(
-                          "https://downloads.smallhd.com/dev/backend-node-server/firmware/redtouch/SmallHD_RED_Touch_Firmware_V4.8.3.zip"
-                        )
-                      }
-                      className="btn btn-primary text-white"
-                    >
-                      Download
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <h2>
-        DSMC3™ <strong>RED® Touch</strong> <span>7.0" LCD Firmware v4.8.1</span>
-      </h2>
-      <div className="row">
-        <div className="col-lg-12 mb-lg-5">
-          <div className="card  mb-5 ">
-            <div className="card-body">
-              <div className="row align-items-center">
-                <div className="col-lg-12">
-                  <div className="row mb-3">
-                    <div className="col-md-3">
-                      <h3 className="text-dark">
-                        <small className="d-block mb-3 text-black-50">
-                          Version
-                        </small>{" "}
-                        <span>4.8.1</span>
-                      </h3>
-                    </div>
-                    <div className="col-md-5 d-none">
-                      <h3 className="text-dark">
-                        <small className="d-block mb-3 text-black-50">
-                          Build
-                        </small>
-                        --
-                      </h3>
-                    </div>
-                    <div className="col-md-4">
-                      <h3 className="text-dark">
-                        <small className="d-block mb-3 text-black-50">
-                          Updated on
-                        </small>{" "}
-                        2022-02-22
-                      </h3>
-                    </div>
-                  </div>
-                  <div>
-                    <h2>
-                      <strong>Firmware update Best practices:</strong>
-                    </h2>
-                    <ul>
-                      <li>SD card 2,4,8,16GB</li>
-                      <li>Backup your profile before update (recommended)</li>
-                      <li>Use AC power or fully charged battery</li>
-                      <li>Note older version of firmware before update</li>
-                    </ul>
-                    <h2>
-                      <strong>Firmware Compatibility:</strong>
-                    </h2>
-                    <ul>
-                      <li>
-                        This firmware is compatible with the DSMC3 RED® Touch
-                        7.0" LCD
-                      </li>
-                      <li>
-                        This firmware <strong>is not compatible with</strong>{" "}
-                        other SmallHD or RED® Touch monitors
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="btn-col">
-                    {/*<a href="#" className="btn btn-outline-dark">Learn More</a>*/}
-                    <button
-                      type="button"
-                      className="btn btn-outline-dark"
-                      data-toggle="modal"
-                      data-target="#RedModal-v0"
-                    >
-                      Learn More
-                    </button>
-                    <a
-                      target="_blank"
-                      onClick={() =>
-                        props.directdownloadlink(
-                          "https://downloads.smallhd.com/dev/backend-node-server/firmware/redtouch/SmallHD_RED_Touch_Firmware_V4.8.1.zip"
-                        )
-                      }
-                      className="btn btn-primary text-white"
-                    >
-                      Download
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <h2>
-        DSMC3™ <strong>RED® Touch</strong> <span>7.0" LCD Firmware v4.8.0</span>
-      </h2>
-      <div className="row">
-        <div className="col-lg-12 mb-lg-5">
-          <div className="card  mb-5 ">
-            <div className="card-body">
-              <div className="row align-items-center">
-                <div className="col-lg-12">
-                  <div className="row mb-3">
-                    <div className="col-md-3">
-                      <h3 className="text-dark">
-                        <small className="d-block mb-3 text-black-50">
-                          Version
-                        </small>{" "}
-                        <span>4.8.0</span>
-                      </h3>
-                    </div>
-                    <div className="col-md-5 d-none">
-                      <h3 className="text-dark">
-                        <small className="d-block mb-3 text-black-50">
-                          Build
-                        </small>
-                        --
-                      </h3>
-                    </div>
-                    <div className="col-md-4">
-                      <h3 className="text-dark">
-                        <small className="d-block mb-3 text-black-50">
-                          Updated on
-                        </small>{" "}
-                        2021-12-07
-                      </h3>
-                    </div>
-                  </div>
-                  <div>
-                    <h2>
-                      <strong>Firmware update Best practices:</strong>
-                    </h2>
-                    <ul>
-                      <li>SD card 2,4,8,16GB</li>
-                      <li>Backup your profile before update (recommended)</li>
-                      <li>Use AC power or fully charged battery</li>
-                      <li>Note older version of firmware before update</li>
-                    </ul>
-                    <h2>
-                      <strong>Firmware Compatibility:</strong>
-                    </h2>
-                    <ul>
-                      <li>
-                        This firmware is compatible with the DSMC3 RED® Touch
-                        7.0" LCD
-                      </li>
-                      <li>
-                        This firmware <strong>is not compatible with</strong>{" "}
-                        other SmallHD or RED® Touch monitors
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="btn-col">
-                    {/*<a href="#" className="btn btn-outline-dark">Learn More</a>*/}
-                    <button
-                      type="button"
-                      className="btn btn-outline-dark"
-                      data-toggle="modal"
-                      data-target="#RedModal"
-                    >
-                      Learn More
-                    </button>
-                    <a
-                      target="_blank"
-                      onClick={() =>
-                        props.directdownloadlink(
-                          "https://downloads.smallhd.com/dev/backend-node-server/firmware/redtouch/SmallHD_RED_Touch_Firmware_V4.8.0.zip"
-                        )
-                      }
-                      className="btn btn-primary text-white"
-                    >
-                      Download
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-4  mb-lg-5 d-none">
-          <div className="card ">
-            <div className="card-body">
-              <h2>
-                <strong>Important Beta Software Information:</strong>
-              </h2>
-              <ul className="list-txt">
-                <li>There may be some unknown bugs with v4.7.6 Beta</li>
-                <li>
-                  Please report bugs to the following email address:
-                  <strong>support@smallhd.com</strong>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+     
+    
 
-      <h2>
-        DSMC3 <strong>RED® Touch</strong>{" "}
-        <span>7.0" LCD Firmware v4.7.6 Beta</span>
-      </h2>
-      <div className="row">
-        <div className="col-lg-12 mb-lg-5">
-          <div className="card  mb-5 ">
-            <div className="card-body">
-              <div className="row align-items-center">
-                <div className="col-lg-12">
-                  <div className="row mb-3">
-                    <div className="col-md-3">
-                      <h3 className="text-dark">
-                        <small className="d-block mb-3 text-black-50">
-                          Version
-                        </small>{" "}
-                        <span>4.7.6</span>
-                      </h3>
-                    </div>
-                    <div className="col-md-5 d-none">
-                      <h3 className="text-dark">
-                        <small className="d-block mb-3 text-black-50">
-                          Build
-                        </small>
-                        --
-                      </h3>
-                    </div>
-                    <div className="col-md-4">
-                      <h3 className="text-dark">
-                        <small className="d-block mb-3 text-black-50">
-                          Updated on
-                        </small>{" "}
-                        2021-11-16
-                      </h3>
-                    </div>
-                  </div>
-                  <div>
-                    <h2>
-                      <strong>Firmware update Best practices:</strong>
-                    </h2>
-                    <ul>
-                      <li>SD card 2,4,8,16GB</li>
-                      <li>Backup your profile before update (recommended)</li>
-                      <li>Use AC power or fully charged battery</li>
-                      <li>Note older version of firmware before update</li>
-                    </ul>
-                    <h2>
-                      <strong>Firmware Compatibility:</strong>
-                    </h2>
-                    <ul>
-                      <li>
-                        This firmware is compatible with the DSMC3 RED® Touch
-                        7.0" LCD
-                      </li>
-                      <li>
-                        This firmware <strong>is not compatible with</strong>{" "}
-                        other SmallHD or RED® Touch monitors
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="btn-col">
-                    {/*<a href="#" className="btn btn-outline-dark">Learn More</a>*/}
-                    <button
-                      type="button"
-                      className="btn btn-outline-dark"
-                      data-toggle="modal"
-                      data-target="#RedModalOld"
-                    >
-                      Learn More
-                    </button>
-                    <a
-                      target="_blank"
-                      onClick={() =>
-                        props.directdownloadlink(
-                          "https://downloads.smallhd.com/dev/backend-node-server/firmware/redtouch/DSMC3_RED_Touch_Firmware_V4.7.6.zip"
-                        )
-                      }
-                      className="btn btn-primary text-white"
-                    >
-                      Download
-                    </a>
-                  </div>
-                </div>
+    
+     
+
+      <div
+        className="modal fade beta-firmware-modal"
+        // aria-hidden="true"
+        id="RedModal-v5-4-1-main"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog modal-lg">
+          <div className="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title" id="exampleModalLabel">
+                <strong>DSMC3™ RED® Touch 7.0" LCD Firmware </strong>{" "}
+                <span>v5.4.1</span>{" "}
+              </h2>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+
+            <div class="modal-body">
+              <div class="mb-4">
+                <h2>
+                  <strong>Firmware update Best practices:</strong>
+                </h2>
+                <ul>
+                  <li>SD card 2,4,8,16GB</li>
+                  <li>Backup your profile before update (recommended)</li>
+                  <li>Use AC power or fully charged battery</li>
+                  <li>Note older version of firmware before update</li>
+                </ul>
+              </div>
+              <div class="mb-4">
+                <h2>
+                  <strong>Firmware Compatibility:</strong>
+                </h2>
+                <ul class="list-txt">
+                  <li>This firmware is compatible with the DSMC3 RED® Touch7.0" LCD</li>
+                  <li>This firmware <strong>is not compatible with</strong> other SmallHD or RED® Touch monitors</li>
+                </ul>
+              </div>
+              
+              <div class="mb-4">
+                <h2>
+                  <strong>Bugs Fixed:</strong>
+                </h2>
+                <ul class="list-txt">
+                  <li>The Shutter edit menu will no longer occasionally default to an incorrect value.</li>
+                  <li> Pressing and holding on a function button no longer crashes the RED® Touch monitor.</li>
+                  
+                </ul>
+              </div>
+              
+            </div>
+            <div className="modal-footer">
+              <div className="btn-col">
+                <a
+                  target="_blank"
+                  onClick={() =>
+                    props.directdownloadlink(
+                      "https://downloads.smallhd.com/dev/backend-node-server/firmware/redtouch/SmallHD_RED_Touch_Firmware_V5.4.1.zip"
+                    )
+                  }
+                  className="btn btn-primary text-white"
+                  data-dismiss="modal" aria-label="Close"
+                >
+                  Download
+                </a>
               </div>
             </div>
           </div>
@@ -1212,342 +1068,7 @@ const redtouchfirmware = (props) => {
             </div>
           </div>
         </div>
-      </div>
-      <div
-        className="modal fade beta-firmware-modal"
-        id="RedModal-v3"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div className="modal-dialog modal-lg">
-          <div className="modal-content">
-            <div className="modal-header">
-              <h2 className="modal-title" id="exampleModalLabel">
-                <strong>DSMC3™ RED® Touch 7.0" LCD Firmware </strong>{" "}
-                <span>v4.8.3</span>{" "}
-              </h2>
-              <button
-                type="button"
-                className="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-
-            <div className="modal-body">
-              <div className="mb-4">
-                <h2>
-                  <strong>Improvements and Alterations:</strong>
-                </h2>
-                <ul className="list-txt">
-                  <li>Maintenance update for SmallHD production practices.</li>
-                </ul>
-              </div>
-              <div className="mb-4">
-                <h2>
-                  <strong>Recommended Practices:</strong>
-                </h2>
-                <ul className="list-txt">
-                  <li>
-                    Connect third party external recorders directly downstream
-                    of your source device (i.e. camera), not downstream of the
-                    monitor
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="modal-footer">
-              <a
-                target="_blank"
-                onClick={() =>
-                  props.directdownloadlink(
-                    "https://downloads.smallhd.com/dev/backend-node-server/firmware/redtouch/SmallHD_RED_Touch_Firmware_V4.8.3.zip"
-                  )
-                }
-                className="btn btn-primary text-white"
-                data-dismiss="modal" aria-label="Close"
-              >
-                Download
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div
-        className="modal fade beta-firmware-modal"
-        id="RedModal-v0"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div className="modal-dialog modal-lg">
-          <div className="modal-content">
-            <div className="modal-header">
-              <h2 className="modal-title" id="exampleModalLabel">
-                <strong>DSMC3™ RED® Touch 7.0" LCD Firmware </strong>{" "}
-                <span>v4.8.1</span>{" "}
-              </h2>
-              <button
-                type="button"
-                className="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-
-            <div className="modal-body">
-              <div className="mb-4">
-                <h2>
-                  <strong>Improvements and Alterations:</strong>
-                </h2>
-                <ul className="list-txt roman">
-                  <li>
-                    DSMC3™ RED® Touch monitors now ship calibrated to the DCI-P3
-                    Color Space by default. Existing monitors now have a path to
-                    switch to a DCI-P3 calibration by downloading a new LUT from
-                    our website and loading it as a Custom Calibration.
-                    <ul className="alpha">
-                      <li>
-                        DCI-P3 Calibration Procedure:
-                        <ol>
-                          <li>
-                            Enter the Calibration menu (Monitor Settings >
-                            Calibration)
-                          </li>
-                          <li>
-                            Reference the 8-digit reference number next to
-                            Factory Calibration (A07D8007 or 40702052)
-                          </li>
-                          <li>
-                            Download the corresponding DCI-P3 calibration LUT on
-                            the Download page
-                          </li>
-                          <li>
-                            Install the LUT via Custom Calibration (Monitor
-                            Settings > Calibration > Custom Calibration > New
-                            Calibration
-                          </li>
-                          <li>Select DCI-P3 as the Calibration Target</li>
-                          <li>
-                            Load the new Calibration LUT you recently downloaded
-                            (Browse for LUT)
-                          </li>
-                        </ol>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-              <div className="mb-4">
-                <h2>
-                  <strong>Recommended Practices:</strong>
-                </h2>
-                <ul className="list-txt">
-                  <li>
-                    Connect third party external recorders directly downstream
-                    of your source device (i.e. camera), not downstream of the
-                    monitor
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="modal-footer">
-              <a
-                target="_blank"
-                onClick={() =>
-                  props.directdownloadlink(
-                    "https://downloads.smallhd.com/dev/backend-node-server/firmware/redtouch/SmallHD_RED_Touch_Firmware_V4.8.1.zip"
-                  )
-                }
-                className="btn btn-primary text-white"
-                data-dismiss="modal" aria-label="Close"
-              >
-                Download
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        className="modal fade beta-firmware-modal"
-        id="RedModalOld"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div className="modal-dialog modal-lg">
-          <div className="modal-content">
-            <div className="modal-header">
-              <h2 className="modal-title" id="exampleModalLabel">
-                <strong>DSMC3 RED® Touch 7.0" LCD Firmware </strong>{" "}
-                <span>v4.7.6 Beta</span>{" "}
-              </h2>
-              <button
-                type="button"
-                className="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-
-            <div className="modal-body">
-              <div className="mb-4">
-                <h2>
-                  <strong>Improvements and Alterations:</strong>
-                </h2>
-                <ul className="list-txt">
-                  <li>
-                    RED Touch will now properly handle when ProRes recording is
-                    added to V-RAPTOR
-                  </li>
-                  <li>Removed backdrop menu from RED Touch monitors</li>
-                  <li>RED Touch now supports Max Bright mode</li>
-                  <li>Improved color accuracy of image captures</li>
-                  <li>
-                    Firmware Updates now allow spaces in the update file name
-                  </li>
-                </ul>
-              </div>
-              <div className="mb-4">
-                <h2>
-                  <strong>Bugs Fixed:</strong>
-                </h2>
-                <ul className="list-txt">
-                  <li>
-                    RED Touch - AF improvements
-                    <ul>
-                      <li>
-                        Opening the AF menu no longer triggers an AF event
-                      </li>
-                      <li>
-                        AF no longer stops working if the camera fails to lock
-                        focus
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    RED Touch - Improved several cases of video not appearing
-                    properly on startup
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="modal-footer">
-              <a
-                target="_blank"
-                onClick={() =>
-                  props.directdownloadlink(
-                    "https://downloads.smallhd.com/dev/backend-node-server/firmware/redtouch/DSMC3_RED_Touch_Firmware_V4.7.6.zip"
-                  )
-                }
-                className="btn btn-primary text-white"
-                data-dismiss="modal" aria-label="Close"
-              >
-                Download
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        className="modal fade beta-firmware-modal"
-        id="RedModal"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div className="modal-dialog modal-lg">
-          <div className="modal-content">
-            <div className="modal-header">
-              <h2 className="modal-title" id="exampleModalLabel">
-                <strong>DSMC3™ RED® Touch 7.0" LCD Firmware </strong>{" "}
-                <span>v4.8.0</span>{" "}
-              </h2>
-              <button
-                type="button"
-                className="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-
-            <div className="modal-body">
-              <div className="mb-4">
-                <h2>
-                  <strong>Features Added:</strong>
-                </h2>
-                <ul className="list-txt">
-                  <li>Added support for V-RAPTOR™ FW 1.2 features</li>
-                  <li>Added support for ProRes recording</li>
-                  <li>Added support for frame-accurate timecode</li>
-                </ul>
-              </div>
-              <div className="mb-4">
-                <h2>
-                  <strong>Improvements and Alterations:</strong>
-                </h2>
-                <ul className="list-txt">
-                  <li>RED® Touch now shows pre-record state</li>
-                  <li>TC, GEN, SYNC now visible at all times</li>
-                  <li>RED® Touch now supports UI Lock</li>
-                  <li>
-                    RED® Touch now supports custom FPS, Shutter, WB values
-                  </li>
-                  <li>
-                    RED® Touch no longer monitors internal RTC, pulls date/time
-                    from V-RAPTOR™
-                  </li>
-                </ul>
-              </div>
-              <div className="mb-4">
-                <h2>
-                  <strong>Bugs Fixed:</strong>
-                </h2>
-                <ul className="list-txt">
-                  <li>Fixed potential erratic touchscreen behavior</li>
-                  <li>Fixed battery meter behavior</li>
-                </ul>
-              </div>
-              <div className="mb-4">
-                <h2>
-                  <strong>Recommended Practices:</strong>
-                </h2>
-                <ul className="list-txt">
-                  <li>
-                    Connect third party external recorders directly downstream
-                    of your source device (i.e. camera), not downstream of the
-                    monitor
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="modal-footer">
-              <a
-                target="_blank"
-                onClick={() =>
-                  props.directdownloadlink(
-                    "https://downloads.smallhd.com/dev/backend-node-server/firmware/redtouch/SmallHD_RED_Touch_Firmware_V4.8.0.zip"
-                  )
-                }
-                className="btn btn-primary text-white"
-                data-dismiss="modal" aria-label="Close"
-              >
-                Download
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+      </div>  
     </>
   );
 };
