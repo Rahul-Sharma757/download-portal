@@ -3,7 +3,7 @@ import RegistrationPopup from "../Common/RegistrationPopup";
 const redtouchfirmware = (props) => {
   return (
     <>
-     <div className="row">
+      <div className="row">
         <div className="col-lg-8 mb-lg-5">
           <h2>
             DSMC3™ <strong>RED® Touch</strong>{" "}
@@ -82,7 +82,7 @@ const redtouchfirmware = (props) => {
                       }
                       className="btn btn-primary text-white"
                     >
-                      Download 
+                      Download
                     </a>
                   </div>
                 </div>
@@ -92,7 +92,7 @@ const redtouchfirmware = (props) => {
         </div>
         <div className="col-lg-4  mb-lg-5">
           <h2>
-            <span>DSMC3™ <strong>RED® Touch</strong> 7.0" LCD Firmware v5.0.0 Beta-1</span>
+            <span>DCI-P3 Calibration Procedure DSMC3™ <strong>RED® Touch</strong> 7.0" LCD</span>
           </h2>
           <div className="card ">
             <div className="card-body">
@@ -102,26 +102,20 @@ const redtouchfirmware = (props) => {
                     <small className="d-block mb-3 text-black-50">
                       Updated on
                     </small>{" "}
-                    23rd June, 2022
+                    22nd February, 2022
                   </h3>
                 </div>
               </div>
-              <h2>
-                <strong>Firmware update Best practices:</strong>
-              </h2>
-              <ul>
-                <li>SD card 2,4,8,16GB</li>
-                <li>Backup your profile before update (recommended)</li>
-                <li>Use AC power or fully charged battery</li>
-                <li>Note older version of firmware before update</li>
-              </ul>
+              <div class="mb-3"><p>DSMC3™ <strong>RED® Touch</strong> monitors now ship calibrated to the DCI-P3 Color Space by default. Existing monitors now have a path to
+                switch from a REC 709, to a DCI-P3 calibration by downloading a new LUT from the list below and loading it as a Custom
+                Calibration.</p></div>
               <div className="btn-col">
                 {/*<a href="#" className="btn btn-outline-dark">Learn More</a>*/}
                 <button
                   type="button"
                   className="btn btn-outline-dark"
                   data-toggle="modal"
-                  data-target="#RedModal-v5-main"
+                  data-target="#RedModal-dci-p3"
                 >
                   Learn More
                 </button>
@@ -129,7 +123,7 @@ const redtouchfirmware = (props) => {
                   target="_blank"
                   onClick={() =>
                     props.directdownloadlink(
-                      "https://downloads.smallhd.com/dev/backend-node-server/firmware/redtouch/SmallHD_RED_Touch_Firmware_V5.0.0-main.zip"
+                      "https://downloads.smallhd.com/dev/backend-node-server/firmware/redtouch/DSMC3_RED_Touch_Firmware_V.zip"
                     )
                   }
                   className="btn btn-primary text-white"
@@ -141,7 +135,7 @@ const redtouchfirmware = (props) => {
           </div>
         </div>
       </div>
-    <div className="row">
+      <div className="row">
         <div className="col-lg-8 mb-lg-5">
           <h2>
             DSMC3™ <strong>RED® Touch</strong>{" "}
@@ -220,7 +214,7 @@ const redtouchfirmware = (props) => {
                       }
                       className="btn btn-primary text-white"
                     >
-                      Download 
+                      Download
                     </a>
                   </div>
                 </div>
@@ -279,7 +273,7 @@ const redtouchfirmware = (props) => {
           </div>
         </div>
       </div>
-    <div className="row">
+      <div className="row">
         <div className="col-lg-8 mb-lg-5">
           <h2>
             DSMC3™ <strong>RED® Touch</strong>{" "}
@@ -358,7 +352,7 @@ const redtouchfirmware = (props) => {
                       }
                       className="btn btn-primary text-white"
                     >
-                      Download 
+                      Download
                     </a>
                   </div>
                 </div>
@@ -496,7 +490,7 @@ const redtouchfirmware = (props) => {
                       }
                       className="btn btn-primary text-white"
                     >
-                      Download 
+                      Download
                     </a>
                   </div>
                 </div>
@@ -505,11 +499,71 @@ const redtouchfirmware = (props) => {
           </div>
         </div>
       </div>
-     
-    
 
-    
-     
+      <div
+        className="modal fade beta-firmware-modal"
+        // aria-hidden="true"
+        id="RedModal-dci-p3"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog modal-lg">
+          <div className="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title" id="exampleModalLabel">
+                <strong>DCI-P3 Calibration Procedure
+                  DSMC3™ RED® Touch 7.0" LCD</strong>{" "}
+              </h2>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+
+            <div class="modal-body">
+              <div class="mb-4">
+                <p>DSMC3™ RED® Touch monitors now ship calibrated to the DCI-P3 Color Space by default. Existing monitors now have a path to
+switch from a REC 709, to a DCI-P3 calibration by downloading a new LUT from the list below and loading it as a Custom
+Calibration.</p>
+              </div>
+              <div class="mb-4">
+                <h2>
+                  <strong>Steps for DCI-P3 Monitor Calibration:</strong>
+                </h2>
+                <ul class="list-txt">
+                  <li>Enter the Calibration menu (Monitor Settings > Calibration)</li>
+                  <li>Reference the 8-digit reference number next to Factory Calibration (<strong>A07D8007</strong> or <strong>40702052</strong>)</li>
+                  <li>Download the corresponding DCI-P3 calibration LUT</li>
+                  <li>Install the LUT via Custom Calibration (Monitor Settings > Calibration > Custom Calibration > New Calibration)</li>
+                  <li>Select DCI-P3 as the Calibration Target</li>
+                  <li>Load the new Calibration LUT you recently downloaded (Browse for LUT)</li>
+                </ul>
+              </div>
+            </div>
+            <div className="modal-footer">
+              <div className="btn-col">
+                <a
+                  target="_blank"
+                  onClick={() =>
+                    props.directdownloadlink(
+                      "https://downloads.smallhd.com/dev/backend-node-server/firmware/redtouch/DSMC3_RED_Touch_Firmware_V.zip"
+                    )
+                  }
+                  className="btn btn-primary text-white"
+                  data-dismiss="modal" aria-label="Close"
+                >
+                  Download
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div
         className="modal fade beta-firmware-modal"
@@ -557,7 +611,7 @@ const redtouchfirmware = (props) => {
                   <li>This firmware <strong>is not compatible with</strong> other SmallHD or RED® Touch monitors</li>
                 </ul>
               </div>
-              
+
               <div class="mb-4">
                 <h2>
                   <strong>Bugs Fixed:</strong>
@@ -565,10 +619,10 @@ const redtouchfirmware = (props) => {
                 <ul class="list-txt">
                   <li>The Shutter edit menu will no longer occasionally default to an incorrect value.</li>
                   <li> Pressing and holding on a function button no longer crashes the RED® Touch monitor.</li>
-                  
+
                 </ul>
               </div>
-              
+
             </div>
             <div className="modal-footer">
               <div className="btn-col">
@@ -636,7 +690,7 @@ const redtouchfirmware = (props) => {
                   <li>This firmware <strong>is not compatible with</strong> other SmallHD or RED® Touch monitors</li>
                 </ul>
               </div>
-              
+
               <div class="mb-4">
                 <h2>
                   <strong>Bugs Fixed:</strong>
@@ -647,7 +701,7 @@ const redtouchfirmware = (props) => {
                   <li>The User Presets popup now allows interacting with all checkbox elements</li>
                 </ul>
               </div>
-              
+
             </div>
             <div className="modal-footer">
               <div className="btn-col">
@@ -722,9 +776,9 @@ const redtouchfirmware = (props) => {
                 <ul class="list-txt">
                   <li>Added Pixel Zoom to function button options (cycles through zoom levels)</li>
                   <li>Added video mirroring to function button options
-                  <ul>
-                    <li>When a mirror/rotate function button is assigned, the user may now specify what combination of mirroring & rotation that function button should apply</li>
-                  </ul>
+                    <ul>
+                      <li>When a mirror/rotate function button is assigned, the user may now specify what combination of mirroring & rotation that function button should apply</li>
+                    </ul>
                   </li>
                   <li>
                     L&R audio meter channels may now be stacked on top of each other for better comparison
@@ -748,7 +802,7 @@ const redtouchfirmware = (props) => {
                   <strong>Features Added:</strong>
                 </h2>
                 <ul class="list-txt">
-                <li>Exposure Assist tools, can now be captured in an image capture
+                  <li>Exposure Assist tools, can now be captured in an image capture
                     <ul>
                       <li>The setting must be enabled via the tool’s configuration menu</li>
                     </ul>
@@ -771,7 +825,7 @@ const redtouchfirmware = (props) => {
                   <li>Data levels were incorrect when the monitor was booted in Max Backlight mode</li>
                 </ul>
               </div>
-              
+
             </div>
             <div className="modal-footer">
               <div className="btn-col">
@@ -1068,7 +1122,7 @@ const redtouchfirmware = (props) => {
             </div>
           </div>
         </div>
-      </div>  
+      </div>
     </>
   );
 };
