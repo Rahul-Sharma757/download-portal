@@ -4,36 +4,36 @@ const betafirmware = (props) => {
   return (
     <>
       <h2>
-        <strong>SmallHD PageOS 5</strong> <span>Firmware v5.0.0-Beta-4</span>
+        <strong>SmallHD PageOS 5</strong> <span>Firmware v5.5.0-Beta-2</span>
       </h2>
       <div className="card">
         <div className="card-body">
-          <div class="row mb-3">
-            <div class="col-md-5">
-              <h3 class="text-dark">
-                <small class="d-block mb-3 text-black-50">Version</small>{" "}
+          <div className="row mb-3">
+            <div className="col-md-5">
+              <h3 className="text-dark">
+                <small className="d-block mb-3 text-black-50">Version</small>{" "}
                 <span>
-                  5.0.0<small>-Beta-4</small>
+                  5.5.0<small>-Beta-2</small>
                 </span>
               </h3>
             </div>
-            <div class="col-md-7">
-              <h3 class="text-dark">
-                <small class="d-block mb-3 text-black-50">Updated on</small>{" "}
-                25th Aug, 2022
+            <div className="col-md-7">
+              <h3 className="text-dark">
+                <small className="d-block mb-3 text-black-50">Updated on</small>{" "}
+                1st Aug, 2023
               </h3>
             </div>
           </div>
-          <h2>
-            <strong>Features Added (OS 5 Beta):</strong>
+          <h2 >
+            <strong>Important Beta Software Information:</strong>
           </h2>
-          <ul class="list-txt">
-            <li>Look-Around Camera Control</li>
+          <ul className="list-txt">
+            <li>This is NOT a full release update and should NOT be used for critical content creation</li>
             <li>
-              HDMI Out enabled for 4K Production Monitors (allows adding a 3D
-              LUT to Output)
+              There may be some unknown bugs with v5.5.0 Beta2
             </li>
-            <li>Multi-View on 4K Production Monitors...</li>
+            <li>Please report bugs to the following email address:<a href="mailto:support@smallhd.com">support@smallhd.com</a></li>
+            <li>This firmware will NOT support the following monitors:</li>
           </ul>
           <div className="btn-col">
             <button
@@ -46,14 +46,14 @@ const betafirmware = (props) => {
             </button>
 
             <a
-                      target="_blank"
-                      onClick={() =>
-                        props.showpopupdownload(
-                          "https://downloads.smallhd.com/dev/backend-node-server/firmware/beta/SmallHD_PageOS_5_Firmware_V5-0-0-Beta-4.zip"
-                        )
-                      }
-                      className="btn btn-primary text-white"
-                    >Download</a>
+              target="_blank"
+              onClick={() =>
+                props.showpopupdownload(
+                  "https://downloads.smallhd.com/dev/backend-node-server/firmware/beta/SmallHD_5.5.0-Beta2-update.zip"
+                )
+              }
+              className="btn btn-primary text-white"
+            >Download</a>
           </div>
         </div>
       </div>
@@ -70,7 +70,7 @@ const betafirmware = (props) => {
             <div className="modal-header">
               <h2 className="modal-title" id="exampleModalLabel">
                 <strong>SmallHD PageOS 5</strong>{" "}
-                <span>Firmware v5.0.0-Beta-4</span>
+                <span>Firmware v5.5.0-Beta-2</span>
               </h2>
               <button
                 type="button"
@@ -82,257 +82,174 @@ const betafirmware = (props) => {
               </button>
             </div>
 
-            <div class="modal-body">
-              <div class="mb-4">
-                <h2 class="bg-warning d-inline-block">
+            <div className="modal-body">
+              <div className="mb-4">
+                <h2 className="bg-warning d-inline-block">
                   <strong>Important Beta Software Information:</strong>
                 </h2>
-                <ul class="list-txt">
+                <ul className="list-txt">
                   <li>
-                    Beta-4 Supports all monitors except the DSMC3 RED® Touch and
-                    Action 5 (see Firmware Compatibility for more information)
+                    This is NOT a full release update and should NOT be used for critical content creation
                   </li>
                   <li>
-                    There are known significant bugs with v5.0.0 Beta (see
-                    complete list below before installing)
+                    There may be some unknown bugs with v5.5.0 Beta2
                   </li>
-                  <li>There may be some unknown bugs with v5.0.0 Beta</li>
                   <li>
                     Please report bugs to the following email address:
                     <a
-                      class="text-decoration-underline"
+                      className="text-decoration-underline"
                       href="mailto:support@smallhd.com"
                     >
                       support@smallhd.com
                     </a>
                   </li>
-                  <li>
-                    Further beta releases are expected to be provided in the
-                    coming weeks
-                  </li>
+                  <li>This firmware will NOT support the following monitors:</li>
+                  <ul>
+                    <li> 1703 HDR</li>
+                    <li>2403 HDR</li>
+                    <li>2403 HB</li>
+                    <li>1703 Studio</li>
+                    <li>1303 Studio</li>
+                    <li>702 OLED</li>
+                    <li>701 Light</li>
+                    <li>701</li>
+                    <li>702 Bright</li>
+                    <li>501</li>
+                    <li>502</li>
+                    <li>502 Bright</li>
+                  </ul>
+                  <li>This firmware is NOT compatible with the DSMC3 RED®Touch or Action 5</li>
+                  <li>RED® Touch users have OS 5 available on the <a href="https://downloads.smallhd.com/firmware/red-touch"> RED® Touch tab</a> </li>
+                  <li>This firmware is NOT compatible with legacy monitors (DP1, DP6, DP4, AC7, and
+                    DP7-PRO)</li>
                 </ul>
               </div>
-              <div class="mb-4">
+              <div className="mb-4">
                 <h2>
-                  <strong>Firmware update Best practices:</strong>
+                  <strong>Features Added:</strong>
                 </h2>
-                <ul class="list-txt">
-                  <li>SD card 2,4,8,16GB</li>
-                  <li>Backup your profile before update (recommended)</li>
-                  <li>Use AC power or fully charged battery</li>
-                  <li>Note older version of firmware before update</li>
+                <ul className="list-txt">
+                  <li>Sony VENICE 2 is now supported by the VENICE camera control license
+                  </li>
+                  <li>Sony VENICE and VENICE 2 now support wireless camera control
+                  </li>
+                  <li>Added support for Ethernet camera control of RCP2 and DSMC2 RED cameras
+                  </li>
+                  <li>Burn-In Recover Mode
+                  </li>
+                  <ul><li>Adds a new settings section under “Display” that allows the user to trigger a
+                    burn-in recovery sequence, which cycles the panel through a color pattern to fix
+                    image retention
+                  </li>
+                    <li>Monitor Settings {">"} Display{">"} Burn-In Recover
+                    </li></ul>
                 </ul>
               </div>
-              <div class="mb-4">
+              <div className="mb-4">
                 <h2>
-                  <strong>Firmware Compatibility:</strong>
+                  <strong>Improvements and Alterations::</strong>
                 </h2>
-                <ul class="list-txt">
+                <ul className="list-txt">
                   <li>
-                    This firmware{" "}
-                    <strong>is NOT compatible with the DSMC3 RED® Touch</strong>{" "}
-                    or <strong>Action 5</strong>
+                    Improved 703 UltraBright Calibration Wizard now shows truly native values
+                  </li>
+                  <ul>
+                    <li>
+                      All previous calibration LUTs created on 703 UB monitors will be altered with this
+                      update, we recommend re-calibrating on the new firmware. This will not affect
+                      monitors that have never had a factory or user calibration LUT loaded
+                    </li>
+                  </ul>
+
+                  <li>
+                    Added support for Blackmagic log BMDFilm and BMDFilm 4k
+                  </li>
+                  <ul>
+                    <li>
+                      These formats should now work with the EL Zone Tool
+                    </li>
+                  </ul>
+
+                  <li>
+                    Improved IP connection for camera control menus
                   </li>
                   <li>
-                    RED® Touch users have a public OS 5 Beta available on the{" "}
-                    <a href="/firmware/red-touch">RED® Touch tab</a>{" "}
+                    4K monitors now display LUT names in the function button label when a Look Tool is
+                    assigned to a User Button
                   </li>
                   <li>
-                    This firmware{" "}
-                    <strong>is NOT compatible with legacy monitors</strong>{" "}
-                    (DP1, DP6, DP4, AC7, and DP7-PRO)
+                    Smart 5 Monitors can now perform camera control when tethered via USB to a
+                    stand-alone Teradek Bolt 4K or Bolt 6 transmitter or receiver. Previously only Smart 7
+                    monitors supported this feature
                   </li>
                   <li>
-                    Please read through <strong>Known Issues</strong> before
-                    installing
+                    Smart 7 Wireless Modules now work on Cine 7 500 TX, Cine 7 500 RX
+                  </li>
+                  <li>
+                    Updated ARRI style Exposure Assist to support LogC4
                   </li>
                 </ul>
               </div>
-              <div class="mb-4">
-                <h2 class="bg-warning d-inline-block">
-                  <strong>IMPORTANT - Known Issues in Beta 4:</strong>
+              <div className="mb-4">
+                <h2 className="d-inline-block">
+                  <strong>Bugs Fixed:</strong>
                 </h2>
-                <ul class="list-txt">
+                <ul className="list-txt">
+                  <li>Image Captures should no longer save corrupted frames</li>
                   <li>
-                    Image Capture may not work as expected on PQ Color Pipes
-                    (will not be resolved in 5.0)
+                    AUTO range selection now defers to the expected range of the selected LOG format
                     <ul>
                       <li>
-                        The raw input data is captured using image capture. The
-                        overlaid image is NOT subject to the Color Pipe, it’s
-                        assumed that all images being overlaid are already in
-                        the same color space as the calibration target.
+                        Previously, users using Sony log formats needed to force the Color Pipe to FULL;
+                        now the color should be accurate even when leaving the Color Pipe to the default
+                        “AUTO” setting
                       </li>
                     </ul>
                   </li>
                   <li>
-                    CalMAN integration has not been finalized and fully
-                    validated
+                    Resolved issues with LUTs not rendering properly on multiview
+                  </li>
+
+
+
+
+
+
+
+                  <li>
+                    Image captures should now be scaled correctly on 720p monitors
                   </li>
                   <li>
-                    Camaro monitors do not work with 10 bit video from a Murideo
-                    color generator
+                    Calman Integration: Resolved issues setting the monitor’s white and black levels
                   </li>
                   <li>
-                    HDMI-&gt;SDI Cross Conversion does not work on some models:
-                    <ul>
-                      <li>
-                        UltraBrights, Smart 7, Focus, Focus 7 fail to
-                        cross-convert
-                      </li>
-                    </ul>
+                    Switching the input range of incoming video now updates the range of the Waveform
                   </li>
                   <li>
-                    Switching Inputs may cause the VISION 24 monitor to start
-                    flickering continuously
-                    <ul>
-                      <li>Workaround: Restart the monitor</li>
-                      <li>
-                        May only exhibit the issue when the two inputs are of
-                        different resolution &amp; frame rate
-                      </li>
-                    </ul>
+                    Tool legend. Previously the Waveform Tool needed to be toggled off and back on.
                   </li>
-                  <li>
-                    4K Monitors do not output 10-bit HDMI video
-                    <ul>
-                      <li>Workaround: Use 8 or 12 bit video</li>
-                    </ul>
-                  </li>
+
                   <li>
                     4K Monitor Scopes fail on some 10 bit, 12 bit RGB or 4:4:4
                     video sources
-                    <ul>
-                      <li>
-                        Workaround: Use 8 bit RGB, 8bit 4:4:4, or any 4:2:2
-                        video format
-                      </li>
-                    </ul>
                   </li>
                   <li>
-                    Smart 7, UltraBright, SDI output may work intermittently
-                    <ul>
-                      <li>
-                        Workaround: Entering and leaving the settings menu
-                        usually restores SDI out
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-              <div class="mb-4">
-                <h2>
-                  <strong>Features Added (OS 5 Beta):</strong>
-                </h2>
-                <ul class="list-txt">
-                  <li>Look-Around Camera Control</li>
-                  <li>
-                    HDMI Out enabled for 4K Production Monitors (allows adding a
-                    3D LUT to Output)
+                    Camera Control - DSMC2 “playback” menu now shows the stop button
                   </li>
                   <li>
-                    Multi-View on 4K Production Monitors
-                    <ul>
-                      <li>VISION monitors support dual-view</li>
-                      <li>
-                        All other 4K production monitors support up to quad-view
-                      </li>
-                    </ul>
+                    Enlarged the size of the white point / black point color patch on small monitors
                   </li>
-                  <li>
-                    Added a Horizon Indicator Tool (Add Tool &gt; Frame &gt;
-                    Horizon Level)
-                  </li>
-                  <li>
-                    EL Zone Tool
-                    <ul>
-                      <li>
-                        Option in the Exposure Assist tool. Only works when
-                        using a LOG Color Pipe
-                      </li>
-                      <li>
-                        Image Capture can’t currently capture the EL Zone tool
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    Added Touch Screen Function Buttons to touch screen monitors
-                  </li>
-                  <li>
-                    Active 4K TX can now be assigned to a function button
-                    <ul>
-                      <li>
-                        Allows using function buttons to change between paired
-                        transmitters
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    Switch from tri-linear to tetrahedral LUT interpolation
-                  </li>
-                  <li>
-                    Added support for 33pt Calibration LUTs on 4K Production
-                    Monitors
-                  </li>
-                  <li>4K Production Monitor Speakers are now enabled</li>
-                  <li>
-                    Added configurable low voltage warning on 4K Production
-                    Monitors
-                  </li>
-                  <li>Color Pipes can be assigned to function buttons</li>
-                  <li>
-                    Allow users to assign unique calibrations to Color Pipes
-                  </li>
-                </ul>
-              </div>
-              <div class="mb-4">
-                <h2>
-                  <strong>Improvements and Alterations:</strong>
-                </h2>
-                <ul class="list-txt">
-                  <li>
-                    Updated ARRI LOG conversion support
-                    <ul>
-                      <li>Added support for ARRI LOGC4</li>
-                      <li>
-                        Updated conversion LUTs for LOGC-&gt;SDR and
-                        LOGC-&gt;HDR
-                      </li>
-                    </ul>
-                  </li>
-                  <li>Custom backdrops are now removed by a factory reset</li>
-                </ul>
-              </div>
-              <div class="mb-4">
-                <h2>
-                  <strong>Beta 3 Issues Resolved by Beta 4:</strong>
-                </h2>
-                <ul class="list-txt">
-                  <li>
-                    Waveform does not work on 4K monitors when positioned at the
-                    top of the screen
-                  </li>
-                  <li>
-                    Multiview Video may momentarily flicker on 4K production
-                    monitors
-                  </li>
-                  <li>
-                    4k Production monitors cannot display 59.98 FPS video from a
-                    Black Magic Ultrastudio
-                  </li>
-                  <li>720p SDI video does not work on 4K monitors</li>
-                </ul>
-              </div>
-              <div class="mb-4">
-                <h2>
-                  <strong>Recommended Practices</strong>
-                </h2>
-                <ul class="list-txt">
-                  <li>
-                    Connect third party external recorders directly downstream
-                    of your source device (i.e. camera), not downstream of the
-                    monitor
-                  </li>
+
+                  <li>  Resolved issues with the Waveform spot meter when using scaled video  </li>
+                  <li>  Vision Series monitor 2 pass calibration now saves even if the user skips applying LUTs  </li>
+                  <li>   Resolved issues in the Zebra Tool when thresholds were set below 0 or above 100 IRE </li>
+                  <li>  Resolved several issues regarding toolbar scrolling through multiple tools  </li>
+                  <li>  Resolved visible gap between the waveform data and waveform legend  </li>
+                  <li>   HDR mode and Max Bright mode can no longer be enabled simultaneously </li>
+                  <li>    Aspect Guide is no longer offset from the edge of the panel by 1 pixel on the Indie 7</li>
+                  <li>   Improved interaction of Color Picker Tool and Pixel Zoom </li>
+                  <li>  Assigning Livegrade Tool to a function button now works as intended  </li>
+                  <li>   Color picker tool location menu can now be left when a scope overlaps the ‘back’ button </li>
                 </ul>
               </div>
             </div>
@@ -340,7 +257,7 @@ const betafirmware = (props) => {
             <div className="modal-footer">
               <a
                 target="_blank"
-                href="https://downloads.smallhd.com/dev/backend-node-server/firmware/beta/SmallHD_PageOS_5_Firmware_V5-0-0-Beta-4.zip"
+                href="https://downloads.smallhd.com/dev/backend-node-server/firmware/beta/SmallHD_5.5.0-Beta2-update.zip"
                 className="btn btn-primary"
               >
                 Download
