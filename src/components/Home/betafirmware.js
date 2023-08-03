@@ -221,8 +221,7 @@ const betafirmware = (props) => {
                   </li>
 
                   <li>
-                    4K Monitor Scopes fail on some 10 bit, 12 bit RGB or 4:4:4
-                    video sources
+                  Fixed an issue using Legal range video in the 4K production monitor Calibration Wizard
                   </li>
                   <li>
                     Camera Control - DSMC2 “playback” menu now shows the stop button
