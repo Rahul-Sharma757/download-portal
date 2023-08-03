@@ -118,9 +118,9 @@ const betafirmware = (props) => {
                     <li>502</li>
                     <li>502 Bright</li>
                   </ul>
-                  <li>This firmware is NOT compatible with the DSMC3 RED®Touch or Action 5</li>
+                  <li>This firmware <strong> is NOT compatible with the DSMC3 RED®Touch</strong>  or<strong> Action 5 </strong></li>
                   <li>RED® Touch users have OS 5 available on the <a href="https://downloads.smallhd.com/firmware/red-touch"> RED® Touch tab</a> </li>
-                  <li>This firmware is NOT compatible with legacy monitors (DP1, DP6, DP4, AC7, and
+                  <li>This firmware <strong>is NOT compatible with legacy monitors </strong> (DP1, DP6, DP4, AC7, and
                     DP7-PRO)</li>
                 </ul>
               </div>
@@ -147,7 +147,7 @@ const betafirmware = (props) => {
               </div>
               <div className="mb-4">
                 <h2>
-                  <strong>Improvements and Alterations::</strong>
+                  <strong>Improvements and Alterations:</strong>
                 </h2>
                 <ul className="list-txt">
                   <li>
@@ -209,13 +209,6 @@ const betafirmware = (props) => {
                   <li>
                     Resolved issues with LUTs not rendering properly on multiview
                   </li>
-
-
-
-
-
-
-
                   <li>
                     Image captures should now be scaled correctly on 720p monitors
                   </li>
@@ -224,8 +217,6 @@ const betafirmware = (props) => {
                   </li>
                   <li>
                     Switching the input range of incoming video now updates the range of the Waveform
-                  </li>
-                  <li>
                     Tool legend. Previously the Waveform Tool needed to be toggled off and back on.
                   </li>
 
@@ -255,13 +246,16 @@ const betafirmware = (props) => {
             </div>
 
             <div className="modal-footer">
-              <a
-                target="_blank"
-                href="https://downloads.smallhd.com/dev/backend-node-server/firmware/beta/SmallHD_5.5.0-Beta2-update.zip"
-                className="btn btn-primary"
-              >
-                Download
-              </a>
+            <a
+              target="_blank"
+              onClick={() =>
+                props.showpopupdownload(
+                  "https://downloads.smallhd.com/dev/backend-node-server/firmware/beta/SmallHD_5.5.0-Beta2-update.zip"
+                )
+              }
+              className="btn btn-primary text-white"
+              data-dismiss="modal" aria-label="Close"
+            >Download</a>
             </div>
           </div>
         </div>

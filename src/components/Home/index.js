@@ -67,6 +67,7 @@ class Home extends Component {
             downloadlink: downloadlink,
             downloadversion: downloadversion
         });
+        
 
     }
 

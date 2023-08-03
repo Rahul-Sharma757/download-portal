@@ -668,10 +668,10 @@ Calibration.</p>
                   <strong>Steps for DCI-P3 Monitor Calibration:</strong>
                 </h2>
                 <ul class="list-txt">
-                  <li>Enter the Calibration menu (Monitor Settings > Calibration)</li>
+                  <li>Enter the Calibration menu (Monitor Settings{" >"} Calibration)</li>
                   <li>Reference the 8-digit reference number next to Factory Calibration (<strong>A07D8007</strong> or <strong>40702052</strong>)</li>
                   <li>Download the corresponding DCI-P3 calibration LUT</li>
-                  <li>Install the LUT via Custom Calibration (Monitor Settings > Calibration > Custom Calibration > New Calibration)</li>
+                  <li>Install the LUT via Custom Calibration (Monitor Settings{" >"} Calibration{" >"} Custom Calibration{" >"} New Calibration)</li>
                   <li>Select DCI-P3 as the Calibration Target</li>
                   <li>Load the new Calibration LUT you recently downloaded (Browse for LUT)</li>
                 </ul>
@@ -1285,7 +1285,7 @@ Calibration.</p>
                 </h2>
                 <ol className="list-txt">
                   <li>
-                    Enter the Calibration menu (Monitor Settings > Calibration)
+                    Enter the Calibration menu (Monitor Settings{" > "}Calibration)
                   </li>
                   <li>
                     Reference the 8-digit reference number next to Factory
@@ -1298,8 +1298,8 @@ Calibration.</p>
                   </li>
                   <li>Download the corresponding DCI-P3 calibration LUT</li>
                   <li>
-                    Install the LUT via Custom Calibration (Monitor Settings >
-                    Calibration > Custom Calibration > New Calibration)
+                    Install the LUT via Custom Calibration (Monitor Settings{" >"}
+                    Calibration{" > "}Custom Calibration{" > "}New Calibration)
                   </li>
                   <li>Select DCI-P3 as the Calibration Target</li>
                   <li>
