@@ -143,6 +143,8 @@ const betafirmware = (props) => {
                   </li>
                     <li>Monitor Settings {">"} Display{">"} Burn-In Recover
                     </li></ul>
+                  <li>SmallHD 4K Production Monitors now support camera control licenses for ARRI, RED
+and Sony cameras</li>
                 </ul>
               </div>
               <div className="mb-4">
