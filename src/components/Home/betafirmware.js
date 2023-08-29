@@ -4,7 +4,7 @@ const betafirmware = (props) => {
   return (
     <>
       <h2>
-        <strong>SmallHD PageOS 5</strong> <span>Firmware v5.5.0-Beta-2</span>
+        <strong>SmallHD PageOS 5</strong> <span>Firmware v5.5.0-Beta-3</span>
       </h2>
       <div className="card">
         <div className="card-body">
@@ -13,14 +13,14 @@ const betafirmware = (props) => {
               <h3 className="text-dark">
                 <small className="d-block mb-3 text-black-50">Version</small>{" "}
                 <span>
-                  5.5.0<small>-Beta-2</small>
+                  5.5.0<small>-Beta-3</small>
                 </span>
               </h3>
             </div>
             <div className="col-md-7">
               <h3 className="text-dark">
                 <small className="d-block mb-3 text-black-50">Updated on</small>{" "}
-                1st Aug, 2023
+                29th Aug, 2023
               </h3>
             </div>
           </div>
@@ -30,7 +30,7 @@ const betafirmware = (props) => {
           <ul className="list-txt">
             <li>This is NOT a full release update and should NOT be used for critical content creation</li>
             <li>
-              There may be some unknown bugs with v5.5.0 Beta2
+              There may be some unknown bugs with v5.5.0 Beta3
             </li>
             <li>Please report bugs to the following email address:<a href="mailto:support@smallhd.com">support@smallhd.com</a></li>
             <li>This firmware will NOT support the following monitors:</li>
@@ -70,7 +70,7 @@ const betafirmware = (props) => {
             <div className="modal-header">
               <h2 className="modal-title" id="exampleModalLabel">
                 <strong>SmallHD PageOS 5</strong>{" "}
-                <span>Firmware v5.5.0-Beta-2</span>
+                <span>Firmware v5.5.0-Beta-3</span>
               </h2>
               <button
                 type="button"
@@ -92,7 +92,7 @@ const betafirmware = (props) => {
                     This is NOT a full release update and should NOT be used for critical content creation
                   </li>
                   <li>
-                    There may be some unknown bugs with v5.5.0 Beta2
+                    There may be some unknown bugs with v5.5.0 Beta3
                   </li>
                   <li>
                     Please report bugs to the following email address:
@@ -128,6 +128,13 @@ const betafirmware = (props) => {
                 <h2>
                   <strong>Features Added:</strong>
                 </h2>
+                <ul className="mb-0">
+                  <li>Added Camera Control support for ARRI ALEXA 35
+                    <ul>
+                      <li> Compatible with camera software update package 1.2 and prior <a href="https://www.arri.com/en/technical-service/firmware/software-and-firmware-updates-for-cameras/alexa-35-sup-1-2-0"> (SUP 1.2.0)</a></li>
+                    </ul>
+                  </li>
+                </ul>
                 <ul className="list-txt">
                   <li>Sony VENICE 2 is now supported by the VENICE camera control license
                   </li>
@@ -197,6 +204,7 @@ and Sony cameras</li>
                   <strong>Bugs Fixed:</strong>
                 </h2>
                 <ul className="list-txt">
+                  <li>Custom Calibrations are now assignable to Color Pipe 8</li>
                   <li>Image Captures should no longer save corrupted frames</li>
                   <li>
                     AUTO range selection now defers to the expected range of the selected LOG format
