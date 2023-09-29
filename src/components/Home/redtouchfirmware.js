@@ -93,7 +93,7 @@ const redtouchfirmware = (props) => {
         </div>
         <div className="col-lg-4  mb-lg-5">
         <h2>
-            <span>DSMC3TM <strong>RED® Touch</strong> 7.0" LCD Firmware v5.5.0 Beta</span>
+            <span>DSMC3<sup>TM</sup> <strong>RED® Touch</strong> 7.0" LCD Firmware v5.5.0 Beta</span>
           </h2>
           <div className="card mb-5">
             <div className="card-body">
@@ -655,7 +655,7 @@ const redtouchfirmware = (props) => {
           <div className="modal-content">
             <div class="modal-header">
               <h2 class="modal-title" id="exampleModalLabel">
-                <strong>DSMC3TM RED® Touch 7.0" LCD Firmware v5.5.0 Beta</strong>{" "}
+                <strong>DSMC3<sup>TM</sup> RED® Touch 7.0" LCD Firmware v5.5.0 Beta</strong>{" "}
               </h2>
               <button
                 type="button"
@@ -682,7 +682,7 @@ const redtouchfirmware = (props) => {
               </h2>
               <ul>
                 <li> This firmware is compatible with the DSMC3 RED® Touch 7.0" LCD</li>
-                <li>his firmware <strong>is not compatible with</strong> other SmallHD or RED® Touch monitors</li>
+                <li> This firmware <strong>is not compatible with</strong> other SmallHD or RED® Touch monitors</li>
               </ul>
               <h2>
                 <strong>Features Added:</strong>
