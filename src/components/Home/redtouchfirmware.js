@@ -3,6 +3,7 @@ import RegistrationPopup from "../Common/RegistrationPopup";
 const redtouchfirmware = (props) => {
   return (
     <>
+    
     <div className="row">
         <div className="col-lg-8 mb-lg-5">
           <h2>
@@ -91,6 +92,57 @@ const redtouchfirmware = (props) => {
           </div>
         </div>
         <div className="col-lg-4  mb-lg-5">
+        <h2>
+            <span>DSMC3TM <strong>RED® Touch</strong> 7.0" LCD Firmware v5.5.0 Beta</span>
+          </h2>
+          <div className="card mb-5">
+            <div className="card-body">
+              <div className="row mb-3">
+                <div className="col-md-8">
+                  <h3 className="text-dark">
+                    <small className="d-block mb-3 text-black-50">
+                      Updated on
+                    </small>{" "}
+                    29th September, 2023
+                  </h3>
+                </div>
+              </div>
+              <h2>
+                <strong>Firmware update Best practices:</strong>
+              </h2>
+              <ul>
+                <li> SD card 2,4,8,16GB</li>
+                <li>Backup your profile before update (recommended)</li>
+                <li>Use AC power or fully charged battery</li>
+                <li>Note older version of firmware before update</li>
+              </ul>
+              
+              
+              <div className="btn-col">
+                {/*<a href="#" className="btn btn-outline-dark">Learn More</a>*/}
+                <button
+                  type="button"
+                  className="btn btn-outline-dark"
+                  data-toggle="modal"
+                  data-target="#RedModal-dci-p4"
+                >
+                  Learn More
+                </button>
+                <a
+                  target="_blank"
+                  onClick={() =>
+                    props.directdownloadlink(
+                      "https://downloads.smallhd.com/dev/backend-node-server/firmware/redtouch/DSMC3_RED_Touch_7.0_LCD_DCI-P3_Calibration.zip"
+                    )
+                  }
+                  className="btn btn-primary text-white"
+                >
+                  Download
+                </a>
+              </div>
+            </div>
+          </div>
+
           <h2>
             <span>DCI-P3 Calibration Procedure DSMC3™ <strong>RED® Touch</strong> 7.0" LCD</span>
           </h2>
@@ -626,6 +678,96 @@ const redtouchfirmware = (props) => {
                     </a>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div
+        className="modal fade beta-firmware-modal"
+        // aria-hidden="true"
+        id="RedModal-dci-p4"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog modal-lg">
+          <div className="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title" id="exampleModalLabel">
+                <strong>DCI-P3 Calibration Procedure
+                  DSMC3™ RED® Touch 7.0" LCD</strong>{" "}
+              </h2>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+
+            <div class="modal-body">
+            <h2>
+                <strong>Firmware update Best practices:</strong>
+              </h2>
+              <ul>
+                <li> SD card 2,4,8,16GB</li>
+                <li>Backup your profile before update (recommended)</li>
+                <li>Use AC power or fully charged battery</li>
+                <li>Note older version of firmware before update</li>
+              </ul>
+            <h2>
+                <strong>Firmware Compatibility:</strong>
+              </h2>
+              <ul>
+                <li> This firmware is compatible with the DSMC3 RED® Touch 7.0" LCD</li>
+                <li>his firmware <strong>is not compatible with</strong> other SmallHD or RED® Touch monitors</li>
+              </ul>
+              <h2>
+                <strong>Features Added:</strong>
+              </h2>
+              <ul>
+                <li> Added GIO Scope Interface
+                  <ul>
+                    <li>Add New Tool > Camera > False Color > Gio Scope</li>
+                  </ul>
+                </li>
+                <li>Added support for ISO Display Mode Gain (dB)
+                  <ul>
+                    <li> Menu > System Settings > Status Settings > ISO Display Mode</li>
+                  </ul>
+                </li>
+                <li>Added ability to disable Page System
+                  <ul>
+                    <li>Monitor Settings > Interface > Page OS</li>
+                  </ul>
+                </li>
+                <li>Added edit list functionality</li>
+              </ul>
+              <h2>
+                <strong>Improvements & Alterations:</strong>
+              </h2>
+                <ul>
+                  <li>Reduced time spent switching to playback mode.</li>
+                </ul>
+            </div>
+            <div className="modal-footer">
+              <div className="btn-col">
+                <a
+                  target="_blank"
+                  onClick={() =>
+                    props.directdownloadlink(
+                      "https://downloads.smallhd.com/dev/backend-node-server/firmware/redtouch/DSMC3_RED_Touch_7.0_LCD_DCI-P3_Calibration.zip"
+                    )
+                  }
+                  className="btn btn-primary text-white"
+                  data-dismiss="modal" aria-label="Close"
+                >
+                  Download
+                </a>
               </div>
             </div>
           </div>
