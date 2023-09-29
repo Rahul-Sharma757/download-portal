@@ -696,8 +696,7 @@ const redtouchfirmware = (props) => {
           <div className="modal-content">
             <div class="modal-header">
               <h2 class="modal-title" id="exampleModalLabel">
-                <strong>DCI-P3 Calibration Procedure
-                  DSMC3™ RED® Touch 7.0" LCD</strong>{" "}
+                <strong>DSMC3TM RED® Touch 7.0" LCD Firmware v5.5.0 Beta</strong>{" "}
               </h2>
               <button
                 type="button"
