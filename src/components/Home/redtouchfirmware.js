@@ -143,48 +143,7 @@ const redtouchfirmware = (props) => {
             </div>
           </div>
 
-          <h2>
-            <span>DCI-P3 Calibration Procedure DSMC3™ <strong>RED® Touch</strong> 7.0" LCD</span>
-          </h2>
-          <div className="card ">
-            <div className="card-body">
-              <div className="row mb-3">
-                <div className="col-md-8">
-                  <h3 className="text-dark">
-                    <small className="d-block mb-3 text-black-50">
-                      Updated on
-                    </small>{" "}
-                    22nd February, 2022
-                  </h3>
-                </div>
-              </div>
-              <div class="mb-3"><p>DSMC3™ <strong>RED® Touch</strong> monitors now ship calibrated to the DCI-P3 Color Space by default. Existing monitors now have a path to
-                switch from a REC 709, to a DCI-P3 calibration by downloading a new LUT from the list below and loading it as a Custom
-                Calibration.</p></div>
-              <div className="btn-col">
-                {/*<a href="#" className="btn btn-outline-dark">Learn More</a>*/}
-                <button
-                  type="button"
-                  className="btn btn-outline-dark"
-                  data-toggle="modal"
-                  data-target="#RedModal-dci-p3"
-                >
-                  Learn More
-                </button>
-                <a
-                  target="_blank"
-                  onClick={() =>
-                    props.directdownloadlink(
-                      "https://downloads.smallhd.com/dev/backend-node-server/firmware/redtouch/DSMC3_RED_Touch_7.0_LCD_DCI-P3_Calibration.zip"
-                    )
-                  }
-                  className="btn btn-primary text-white"
-                >
-                  Download
-                </a>
-              </div>
-            </div>
-          </div>
+         
         </div>
       </div>
       <div className="row">
