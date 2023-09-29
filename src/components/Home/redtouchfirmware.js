@@ -132,7 +132,7 @@ const redtouchfirmware = (props) => {
                   target="_blank"
                   onClick={() =>
                     props.directdownloadlink(
-                      "https://downloads.smallhd.com/dev/backend-node-server/firmware/redtouch/DSMC3_RED_Touch_7.0_LCD_DCI-P3_Calibration.zip"
+                      "https://downloads.smallhd.com/dev/backend-node-server/firmware/redtouch/SmallHD_RED_Touch_Firmware_V5.5.0-beta.zip"
                     )
                   }
                   className="btn btn-primary text-white"
@@ -759,7 +759,7 @@ const redtouchfirmware = (props) => {
                   target="_blank"
                   onClick={() =>
                     props.directdownloadlink(
-                      "https://downloads.smallhd.com/dev/backend-node-server/firmware/redtouch/DSMC3_RED_Touch_7.0_LCD_DCI-P3_Calibration.zip"
+                      "https://downloads.smallhd.com/dev/backend-node-server/firmware/redtouch/SmallHD_RED_Touch_Firmware_V5.5.0-beta.zip"
                     )
                   }
                   className="btn btn-primary text-white"
