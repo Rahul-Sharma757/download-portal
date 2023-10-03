@@ -147,7 +147,7 @@ const redtouchfirmware = (props) => {
         </div>
       </div>
       <div className="row">
-        <div className="col-lg-12 mb-lg-5">
+        <div className="col-lg-8 mb-lg-5">
           <h2>
             DSMC3™ <strong>RED® Touch</strong>{" "}
             <span>7.0" LCD Firmware v5.4.1</span>
@@ -233,7 +233,7 @@ const redtouchfirmware = (props) => {
             </div>
           </div>
         </div>
-        {/* <div className="col-lg-4  mb-lg-5">
+        <div className="col-lg-4  mb-lg-5">
           <h2>
             <span>DCI-P3 Calibration Procedure DSMC3™ <strong>RED® Touch</strong> 7.0" LCD</span>
           </h2>
@@ -253,7 +253,7 @@ const redtouchfirmware = (props) => {
                 switch from a REC 709, to a DCI-P3 calibration by downloading a new LUT from the list below and loading it as a Custom
                 Calibration.</p></div>
               <div className="btn-col">
-                {/*<a href="#" className="btn btn-outline-dark">Learn More</a> 
+                {/*<a href="#" className="btn btn-outline-dark">Learn More</a> */}
                 <button
                   type="button"
                   className="btn btn-outline-dark"
@@ -276,7 +276,7 @@ const redtouchfirmware = (props) => {
               </div>
             </div>
           </div>
-        </div> */}
+        </div> 
       </div>
       <div className="row">
         <div className="col-lg-12 mb-lg-5">
