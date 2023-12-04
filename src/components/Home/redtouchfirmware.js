@@ -1055,7 +1055,7 @@ Calibration.</p>
                   target="_blank"
                   onClick={() =>
                     props.directdownloadlink(
-                      "https://downloads.smallhd.com/dev/backend-node-server/firmware/redtouch/SmallHD_RED_Touch_Firmware_V5.5.0.zip"
+                      "https://downloads.smallhd.com/dev/backend-node-server/firmware/redtouch/SmallHD_RED_Touch_Firmware_V5.5.1.zip"
                     )
                   }
                   className="btn btn-primary text-white"
