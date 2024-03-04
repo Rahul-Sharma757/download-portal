@@ -3,7 +3,7 @@ import React from "react";
 const betafirmware = (props) => {
   return (
     <>
-      <h2>
+      {/* <h2>
         <strong>SmallHD PageOS 5</strong> <span>Firmware v5.5.0-Beta-3</span>
       </h2>
       <div className="card">
@@ -268,7 +268,7 @@ and Sony cameras</li>
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };
