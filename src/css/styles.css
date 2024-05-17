@@ -380,7 +380,7 @@ a:hover{ text-decoration:none; }
 {
 	.download .jumbotron .download-btn{ padding-top:1.5rem;}
 }
-
+.download .info-col{ display:none !important;}
 @media (max-width: 767px)
 {
 	.download .jumbotron{ padding:30px 20px 20px;}
@@ -392,7 +392,7 @@ a:hover{ text-decoration:none; }
 	.download .jumbotron .btn-col .btn{ margin-bottom:10px; display:block;}
 	.download .jumbotron .btn-col .btn:last-child{ margin-bottom:0;}
 	.download .resource-col{ text-align:center;}
-	.download .info-col{ display:block !important}
+	.download .info-col{ display:none !important;}
 	.download .signup-col{ padding:20px;}
 	.download .signup-col h3{ margin-bottom:10px !important;}
 	.download .signup-col form .form-group .btn{ font-size:16px; line-height:20px; padding:14px 20px;}
