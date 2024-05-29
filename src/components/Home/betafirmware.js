@@ -3,8 +3,8 @@ import React from "react";
 const betafirmware = (props) => {
   return (
     <>
-      {/* <h2>
-        <strong>SmallHD PageOS 5</strong> <span>Firmware v5.5.0-Beta-3</span>
+       <h2>
+        <strong>SmallHD PageOS 6</strong> <span>Firmware v6.6.0-Beta0</span>
       </h2>
       <div className="card">
         <div className="card-body">
@@ -13,14 +13,14 @@ const betafirmware = (props) => {
               <h3 className="text-dark">
                 <small className="d-block mb-3 text-black-50">Version</small>{" "}
                 <span>
-                  5.5.0<small>-Beta-3</small>
+                  6.6.0<small>-Beta0</small>
                 </span>
               </h3>
             </div>
             <div className="col-md-7">
               <h3 className="text-dark">
                 <small className="d-block mb-3 text-black-50">Updated on</small>{" "}
-                29th Aug, 2023
+                29th May, 2024
               </h3>
             </div>
           </div>
@@ -30,10 +30,12 @@ const betafirmware = (props) => {
           <ul className="list-txt">
             <li>This is NOT a full release update and should NOT be used for critical content creation</li>
             <li>
-              There may be some unknown bugs with v5.5.0 Beta3
+            There may be some unknown bugs with v6.0.0 Beta0
             </li>
+            <li>Please note which firmware version you are currently using and save your monitor
+Profile before upgrading (Monitor Settings > User > Profiles)</li>
             <li>Please report bugs to the following email address:<a href="mailto:support@smallhd.com">support@smallhd.com</a></li>
-            <li>This firmware will NOT support the following monitors:</li>
+            <li>This firmware will <strong>NOT</strong> support the following monitors:</li>
           </ul>
           <div className="btn-col">
             <button
@@ -49,7 +51,7 @@ const betafirmware = (props) => {
               target="_blank"
               onClick={() =>
                 props.showpopupdownload(
-                  "https://downloads.smallhd.com/dev/backend-node-server/firmware/beta/SmallHD_PageOS_5.5.0-Beta3.zip"
+                  "https://downloads.smallhd.com/dev/backend-node-server/firmware/beta/SmallHD_PageOS_V6-0-0-beta-0.zip"
                 )
               }
               className="btn btn-primary text-white"
@@ -69,8 +71,8 @@ const betafirmware = (props) => {
           <div className="modal-content">
             <div className="modal-header">
               <h2 className="modal-title" id="exampleModalLabel">
-                <strong>SmallHD PageOS 5</strong>{" "}
-                <span>Firmware v5.5.0-Beta-3</span>
+                <strong>SmallHD PageOS 6</strong>{" "}
+                <span>Firmware v6.6.0-Beta0</span>
               </h2>
               <button
                 type="button"
@@ -92,8 +94,10 @@ const betafirmware = (props) => {
                     This is NOT a full release update and should NOT be used for critical content creation
                   </li>
                   <li>
-                    There may be some unknown bugs with v5.5.0 Beta3
+                  There may be some unknown bugs with v6.0.0 Beta0
                   </li>
+                  <li>Please note which firmware version you are currently using and save your monitor
+Profile before upgrading (Monitor Settings > User > Profiles)</li>
                   <li>
                     Please report bugs to the following email address:
                     <a
@@ -103,8 +107,10 @@ const betafirmware = (props) => {
                       support@smallhd.com
                     </a>
                   </li>
-                  <li>This firmware will NOT support the following monitors:</li>
+                  <li>This firmware will <strong>NOT</strong> support the following monitors:</li>
                   <ul>
+                    <li><strong>Vision 17</strong></li>
+                    <li><strong>Vision 24</strong></li>
                     <li> 1703 HDR</li>
                     <li>2403 HDR</li>
                     <li>2403 HB</li>
@@ -118,10 +124,8 @@ const betafirmware = (props) => {
                     <li>502</li>
                     <li>502 Bright</li>
                   </ul>
+                  <li>Complete list of compatible monitors can be <a href="https://support.cs.inc/s/article/SmallHD-Monitors-Currently-Supported-In-The-Latest-PageOS-Firmware">found here</a></li>
                   <li>This firmware <strong> is NOT compatible with the DSMC3 RED®Touch</strong>  or<strong> Action 5 </strong></li>
-                  <li>RED® Touch users have OS 5 available on the <a href="https://downloads.smallhd.com/firmware/red-touch"> RED® Touch tab</a> </li>
-                  <li>This firmware <strong>is NOT compatible with legacy monitors </strong> (DP1, DP6, DP4, AC7, and
-                    DP7-PRO)</li>
                 </ul>
               </div>
               <div className="mb-4">
@@ -129,29 +133,14 @@ const betafirmware = (props) => {
                   <strong>Features Added:</strong>
                 </h2>
                 <ul className="mb-0">
-                  <li>Added Camera Control support for ARRI ALEXA 35
+                  <li>Allow 4K Production Monitor tally/record indicator to be controlled via GPI connection</li>
+                  <li>Added support for multiplexed SDI inputs
                     <ul>
-                      <li> Compatible with camera software update package 1.2 and prior <a href="https://www.arri.com/en/technical-service/firmware/software-and-firmware-updates-for-cameras/alexa-35-sup-1-2-0"> (SUP 1.2.0)</a></li>
+                      <li>Support 2x6G and 4x3G 2SI encoded inputs</li>
                     </ul>
                   </li>
-                </ul>
-                <ul className="list-txt">
-                  <li>Sony VENICE 2 is now supported by the VENICE camera control license
-                  </li>
-                  <li>Sony VENICE and VENICE 2 now support wireless camera control
-                  </li>
-                  <li>Added support for Ethernet camera control of RCP2 and DSMC2 RED cameras
-                  </li>
-                  <li>Burn-In Recover Mode
-                  </li>
-                  <ul><li>Adds a new settings section under “Display” that allows the user to trigger a
-                    burn-in recovery sequence, which cycles the panel through a color pattern to fix
-                    image retention
-                  </li>
-                    <li>Monitor Settings {">"} Display{">"} Burn-In Recover
-                    </li></ul>
-                  <li>SmallHD 4K Production Monitors now support camera control licenses for ARRI, RED
-and Sony cameras</li>
+                  <li>Monitors are now compatible with several USB&lt;-&gt;Wifi adapters</li>
+                  <li>Added support for Level B SDI Video for 4K Production Monitors</li>
                 </ul>
               </div>
               <div className="mb-4">
@@ -160,43 +149,49 @@ and Sony cameras</li>
                 </h2>
                 <ul className="list-txt">
                   <li>
-                    Improved 703 UltraBright Calibration Wizard now shows truly native values
+                  Slight improvements to Vectorscope FPS and Image Capture speed
                   </li>
-                  <ul>
-                    <li>
-                      All previous calibration LUTs created on 703 UB monitors will be altered with this
-                      update, we recommend re-calibrating on the new firmware. This will not affect
-                      monitors that have never had a factory or user calibration LUT loaded
-                    </li>
-                  </ul>
-
-                  <li>
-                    Added support for Blackmagic log BMDFilm and BMDFilm 4k
+                  <li>Updated some UI animations
+                    <ul>
+                      <li>Page transition speed is now faster</li>
+                      <li>Monitor Settings > Interface > Pages</li>
+                    </ul>
                   </li>
-                  <ul>
-                    <li>
-                      These formats should now work with the EL Zone Tool
-                    </li>
-                  </ul>
-
-                  <li>
-                    Improved IP connection for camera control menus
+                  <li>Added support for a custom bouncing “No Video” icon
+                    <ul>
+                      <li>Monitor Settings > User > Personalize</li>
+                    </ul>
                   </li>
-                  <li>
-                    4K monitors now display LUT names in the function button label when a Look Tool is
-                    assigned to a User Button
+                  <li>Luminance Color Pipe Rework
+                    <ul>
+                      <li>“Backlight” and “Brightness” has been replaced with the word “Luminance”</li>
+                      <li>Luminance may now be configured within a color pipe</li>
+                    </ul>
                   </li>
-                  <li>
-                    Smart 5 Monitors can now perform camera control when tethered via USB to a
-                    stand-alone Teradek Bolt 4K or Bolt 6 transmitter or receiver. Previously only Smart 7
-                    monitors supported this feature
+                  <li>Color Pipe UI Update
+                    <ul>
+                      <li>The Color Pipe UI has been updated to make the system easier to use</li>
+                    </ul>
                   </li>
-                  <li>
-                    Smart 7 Wireless Modules now work on Cine 7 500 TX, Cine 7 500 RX
+                  <li>The Crosshatch Tool now allows creating a denser grid</li>
+                  <li>Improved the granularity of the Zebra thresholds
+                    <ul>
+                      <li>Thresholds may now be set based based on either code values or IRE</li>
+                    </ul>
                   </li>
-                  <li>
-                    Updated ARRI style Exposure Assist to support LogC4
+                  <li>Allow capturing two images at once, one with and one without any compatible tools</li>
+                  <li>Custom Exposure Assist Improvements
+                    <ul>
+                      <li>Users may now change the background of a custom exposure map
+                        <ul>
+                          <li>Options include: Grayscale, Transparent (Clean), or Spectrum</li>
+                        </ul>
+                      </li>
+                      <li>Allow users to load custom exposure maps as an image file from removable media</li>
+                    </ul>
                   </li>
+                  <li>Color Pipes now support the following additional white points: D93, D56, D60</li>
+                  <li>When function button tools are deactivated, they are removed from the toolbar</li>
                 </ul>
               </div>
               <div className="mb-4">
@@ -204,52 +199,31 @@ and Sony cameras</li>
                   <strong>Bugs Fixed:</strong>
                 </h2>
                 <ul className="list-txt">
-                  <li>Custom Calibrations are now assignable to Color Pipe 8</li>
-                  <li>Image Captures should no longer save corrupted frames</li>
-                  <li>
-                    AUTO range selection now defers to the expected range of the selected LOG format
-                    <ul>
-                      <li>
-                        Previously, users using Sony log formats needed to force the Color Pipe to FULL;
-                        now the color should be accurate even when leaving the Color Pipe to the default
-                        “AUTO” setting
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    Resolved issues with LUTs not rendering properly on multiview
-                  </li>
-                  <li>
-                    Image captures should now be scaled correctly on 720p monitors
-                  </li>
-                  <li>
-                    Calman Integration: Resolved issues setting the monitor’s white and black levels
-                  </li>
-                  <li>
-                    Switching the input range of incoming video now updates the range of the Waveform
-                    Tool legend. Previously the Waveform Tool needed to be toggled off and back on.
-                  </li>
-
-                  <li>
-                  Fixed an issue using Legal range video in the 4K production monitor Calibration Wizard
-                  </li>
-                  <li>
-                    Camera Control - DSMC2 “playback” menu now shows the stop button
-                  </li>
-                  <li>
-                    Enlarged the size of the white point / black point color patch on small monitors
-                  </li>
-
-                  <li>  Resolved issues with the Waveform spot meter when using scaled video  </li>
-                  <li>  Vision Series monitor 2 pass calibration now saves even if the user skips applying LUTs  </li>
-                  <li>   Resolved issues in the Zebra Tool when thresholds were set below 0 or above 100 IRE </li>
-                  <li>  Resolved several issues regarding toolbar scrolling through multiple tools  </li>
-                  <li>  Resolved visible gap between the waveform data and waveform legend  </li>
-                  <li>   HDR mode and Max Bright mode can no longer be enabled simultaneously </li>
-                  <li>    Aspect Guide is no longer offset from the edge of the panel by 1 pixel on the Indie 7</li>
-                  <li>   Improved interaction of Color Picker Tool and Pixel Zoom </li>
-                  <li>  Assigning Livegrade Tool to a function button now works as intended  </li>
-                  <li>   Color picker tool location menu can now be left when a scope overlaps the ‘back’ button </li>
+                   <li>Fixed bug causing User Conversion LUTs in Color Pipes to be applied incorrectly</li>
+                  <li>Resolved audio data from a BlackMagic PIX-E5 not being detected by SmallHD monitors</li>
+                  <li>Resolved interactions between the Input Tool and Image Capture on Record Start</li>
+                  <li></li>
+                  <li>Camera Control - Scrubbing in playback mode on ARRI cameras no longer changes
+                  Pages</li>
+                  <li> Fixed a case of incorrect Color Pipes being applied to Multi Pages, when more than one
+                  multi-view page was present on the monitor.</li>
+                  <li>Resolved flickering on a Multi Page when receiving some PsF formats</li>
+                  <li>Fixed issues with 8 channel SDI Audio on 4K production monitors</li>
+                  <li>Fixed audio issues when more than 8 channels are present</li>
+                  <li> Super Pixel Scaling was not working, monitors continued to use interpolation</li>
+                  <li>Resolved video range issues that came about when different color pipes were assigned
+                  different video ranges</li>
+                  <li>Resolved discrepancies between Color Picker and Exposure Assist</li>
+                  <li>Restored the missing “Burn-in Recovery” settings element</li>
+                  <li>Lock Switches now function after reboot</li>
+                  <li>Focus Assist lines now persist after a reboot</li>
+                  <li>Focus Assist now functions correctly when bound to a function button</li>
+                  <li>Fixed rare instances of legal range video not being displayed correctly in calibration
+                  wizard</li>
+                  <li>On 4K Production Monitors, Image Overlay no longer dims the image when the source
+                  media is removed</li>
+                  <li>Fixed Low Voltage Warning sometimes not appearing</li>
+                  <li>General UI improvements</li>
                 </ul>
               </div>
             </div>
@@ -259,7 +233,7 @@ and Sony cameras</li>
               target="_blank"
               onClick={() =>
                 props.showpopupdownload(
-                  "https://downloads.smallhd.com/dev/backend-node-server/firmware/beta/SmallHD_PageOS_5.5.0-Beta3.zip"
+                  "https://downloads.smallhd.com/dev/backend-node-server/firmware/beta/SmallHD_PageOS_V6-0-0-beta-0.zip"
                 )
               }
               className="btn btn-primary text-white"
@@ -268,7 +242,7 @@ and Sony cameras</li>
             </div>
           </div>
         </div>
-      </div> */}
+      </div> 
     </>
   );
 };

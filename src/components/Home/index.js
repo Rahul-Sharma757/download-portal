@@ -416,7 +416,7 @@ class Home extends Component {
                                                 <div className="row">
                                                     <div className={
                                                         !this.state.showSearchDetail ?
-                                                            (this.state.dataList.length) ? 'col-lg-12 mb-lg-5'
+                                                            (this.state.dataList.length) ? 'col-lg-8 mb-lg-5'
                                                                 : 'col-lg-12 mb-lg-5'
                                                             : 'col-lg-12 mb-lg-5'
                                                     }
