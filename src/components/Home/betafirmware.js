@@ -1,9 +1,46 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useHistory } from "react-router-dom";
 
-const betafirmware = (props) => {
+const BetaFirmware = (props) => {
+  const history = useHistory();
+
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('betaModal') === 'true') {
+      const modal = new window.bootstrap.Modal(document.getElementById('exampleModal'));
+      modal.show();
+
+      // Remove query parameter after 15 seconds
+      const timeoutId = setTimeout(() => {
+// console.log('kuchbhi');
+        history.push(window.location.pathname);
+      }, 1000);
+
+      // Cleanup timeout on component unmount
+      return () => clearTimeout(timeoutId);
+    }
+
+    // Initialize the modal
+    const modalElement = document.getElementById('exampleModal');
+    const modal = new window.bootstrap.Modal(modalElement);
+
+    // Add click event listener for the "Learn More" button
+    const learnMoreButton = document.getElementById('learnMoreButton');
+    learnMoreButton.addEventListener('click', () => {
+      modal.show();
+    });
+
+    // Cleanup event listeners on unmount
+    return () => {
+      learnMoreButton.removeEventListener('click', () => {
+        modal.show();
+      });
+    };
+  }, [history]);
+
   return (
     <>
-       <h2>
+      <h2>
         <strong>SmallHD PageOS 6</strong> <span>Firmware v6.0.0-Beta0</span>
       </h2>
       <div className="card">
@@ -24,38 +61,44 @@ const betafirmware = (props) => {
               </h3>
             </div>
           </div>
-          <h2 >
+          <h2>
             <strong>Important Beta Software Information:</strong>
           </h2>
           <ul className="list-txt">
             <li>This is NOT a full release update and should NOT be used for critical content creation</li>
+            <li>There may be some unknown bugs with v6.0.0 Beta0</li>
             <li>
-            There may be some unknown bugs with v6.0.0 Beta0
+              Please note which firmware version you are currently using and save your monitor
+              Profile before upgrading (Monitor Settings > User > Profiles)
             </li>
-            <li>Please note which firmware version you are currently using and save your monitor
-Profile before upgrading (Monitor Settings > User > Profiles)</li>
-            <li>Please report bugs to the following email address:<a href="mailto:support@smallhd.com">support@smallhd.com</a></li>
+            <li>
+              Please report bugs to the following email address:
+              <a href="mailto:support@smallhd.com">support@smallhd.com</a>
+            </li>
             <li>This firmware will <strong>NOT</strong> support the following monitors:</li>
           </ul>
           <div className="btn-col">
             <button
               type="button"
               className="btn btn-outline-dark"
-              data-toggle="modal"
-              data-target="#exampleModal"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              id="learnMoreButton"
             >
               Learn More
             </button>
 
             <a
-              target="_blank"
+              href="#"
               onClick={() =>
                 props.showpopupdownload(
                   "https://downloads.smallhd.com/dev/backend-node-server/firmware/beta/SmallHD_PageOS_V6-0-0-beta-0.zip"
                 )
               }
               className="btn btn-primary text-white"
-            >Download</a>
+            >
+              Download
+            </a>
           </div>
         </div>
       </div>
@@ -63,7 +106,7 @@ Profile before upgrading (Monitor Settings > User > Profiles)</li>
       <div
         className="modal fade beta-firmware-modal"
         id="exampleModal"
-        tabindex="-1"
+        tabIndex="-1"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
       >
@@ -74,14 +117,13 @@ Profile before upgrading (Monitor Settings > User > Profiles)</li>
                 <strong>SmallHD PageOS 6</strong>{" "}
                 <span>Firmware v6.0.0-Beta0</span>
               </h2>
-              <button
+              {/* <button
                 type="button"
-                className="close"
-                data-dismiss="modal"
+                className="btn-close"
+                data-bs="modal"
                 aria-label="Close"
               >
-                <span aria-hidden="true">&times;</span>
-              </button>
+              </button> */}
             </div>
 
             <div className="modal-body">
@@ -90,20 +132,15 @@ Profile before upgrading (Monitor Settings > User > Profiles)</li>
                   <strong>Important Beta Software Information:</strong>
                 </h2>
                 <ul className="list-txt">
+                  <li>This is NOT a full release update and should NOT be used for critical content creation</li>
+                  <li>There may be some unknown bugs with v6.0.0 Beta0</li>
                   <li>
-                    This is NOT a full release update and should NOT be used for critical content creation
+                    Please note which firmware version you are currently using and save your monitor
+                    Profile before upgrading (Monitor Settings > User > Profiles)
                   </li>
-                  <li>
-                  There may be some unknown bugs with v6.0.0 Beta0
-                  </li>
-                  <li>Please note which firmware version you are currently using and save your monitor
-Profile before upgrading (Monitor Settings > User > Profiles)</li>
                   <li>
                     Please report bugs to the following email address:
-                    <a
-                      className="text-decoration-underline"
-                      href="mailto:support@smallhd.com"
-                    >
+                    <a className="text-decoration-underline" href="mailto:support@smallhd.com">
                       support@smallhd.com
                     </a>
                   </li>
@@ -111,7 +148,7 @@ Profile before upgrading (Monitor Settings > User > Profiles)</li>
                   <ul>
                     <li><strong>Vision 17</strong></li>
                     <li><strong>Vision 24</strong></li>
-                    <li> 1703 HDR</li>
+                    <li>1703 HDR</li>
                     <li>2403 HDR</li>
                     <li>2403 HB</li>
                     <li>1703 Studio</li>
@@ -148,9 +185,7 @@ Profile before upgrading (Monitor Settings > User > Profiles)</li>
                   <strong>Improvements and Alterations:</strong>
                 </h2>
                 <ul className="list-txt">
-                  <li>
-                  Slight improvements to Vectorscope FPS and Image Capture speed
-                  </li>
+                  <li>Slight improvements to Vectorscope FPS and Image Capture speed</li>
                   <li>Updated some UI animations
                     <ul>
                       <li>Page transition speed is now faster</li>
@@ -202,50 +237,51 @@ Profile before upgrading (Monitor Settings > User > Profiles)</li>
                    <li>Fixed bug causing User Conversion LUTs in Color Pipes to be applied incorrectly</li>
                   <li>Resolved audio data from a BlackMagic PIX-E5 not being detected by SmallHD monitors</li>
                   <li>Resolved interactions between the Input Tool and Image Capture on Record Start</li>
-                  <li></li>
-                  <li>Camera Control - Scrubbing in playback mode on ARRI cameras no longer changes
-                  Pages</li>
-                  <li> Fixed a case of incorrect Color Pipes being applied to Multi Pages, when more than one
-                  multi-view page was present on the monitor.</li>
-                  <li>Resolved flickering on a Multi Page when receiving some PsF formats</li>
-                  <li>Fixed issues with 8 channel SDI Audio on 4K production monitors</li>
-                  <li>Fixed audio issues when more than 8 channels are present</li>
-                  <li> Super Pixel Scaling was not working, monitors continued to use interpolation</li>
-                  <li>Resolved video range issues that came about when different color pipes were assigned
-                  different video ranges</li>
-                  <li>Resolved discrepancies between Color Picker and Exposure Assist</li>
-                  <li>Restored the missing “Burn-in Recovery” settings element</li>
-                  <li>Lock Switches now function after reboot</li>
-                  <li>Focus Assist lines now persist after a reboot</li>
-                  <li>Focus Assist now functions correctly when bound to a function button</li>
-                  <li>Fixed rare instances of legal range video not being displayed correctly in calibration
-                  wizard</li>
-                  <li>On 4K Production Monitors, Image Overlay no longer dims the image when the source
-                  media is removed</li>
-                  <li>Fixed Low Voltage Warning sometimes not appearing</li>
-                  <li>General UI improvements</li>
+                  <li>Camera Control - Scrubbing in playback no longer stops playback functionality for ARRI Mini</li>
+                  <li>Fixed a bug causing 4K Production Monitors to load the last toolset used on a different Page</li>
+                  <li>Resolved issue that would prevent tools from deactivating if accessed via the main toolbar</li>
+                  <li>Fixed inconsistencies when enabling/disabling a custom image capture frame guide</li>
+                </ul>
+              </div>
+              <div className="mb-4">
+                <h2 className="d-inline-block">
+                  <strong>Beta Known Issues:</strong>
+                </h2>
+                <ul className="list-txt">
+                  <li>Some monitor functions may become unresponsive when running for long durations of time</li>
+                  <li>Image Capture while recording via Camera Control may fail to trigger on RED DSMC2 cameras</li>
+                  <li>Image Capture Tool takes longer to engage on monitors connected to HDMI inputs</li>
+                  <li>Dual SDI streams are not supported at this time</li>
+                  <li>Custom Look LUTs may not load correctly when using the custom load function via media</li>
+                  <li>Color Pipe inverting colors for inputs of lesser resolution (PIP)</li>
+                  <li>Custom Look LUTs not being loaded in the correct format</li>
+                  <li>Custom Look LUTs resetting when monitor is powered off</li>
+                  <li>HDMI cross conversion not working correctly when connected to older SmallHD Monitors</li>
+                  <li>Updating and managing custom User Profiles on removable media causing interface delays</li>
+                  <li>Toolset settings being overwritten when updating a previously saved custom Toolset Profile</li>
+                  <li>Changing a white point in a Color Pipe affects all previously set custom Look LUTs</li>
+                  <li>Long duration HDMI connections causing Image Capture to fail</li>
                 </ul>
               </div>
             </div>
-
             <div className="modal-footer">
-            <a
+              <a
               target="_blank"
               onClick={() =>
                 props.showpopupdownload(
                   "https://downloads.smallhd.com/dev/backend-node-server/firmware/beta/SmallHD_PageOS_V6-0-0-beta-0.zip"
                 )
               }
-              className="btn btn-primary text-white"
-              data-dismiss="modal" aria-label="Close"
-            >Download</a>
+              className="btn btn-primary text-white" data-dismiss="modal" aria-label="Close"
+            >
+              Download
+            </a>
             </div>
           </div>
         </div>
-      </div> 
-      
+      </div>
     </>
   );
 };
 
-export default betafirmware;
+export default BetaFirmware;
