@@ -13,7 +13,7 @@ const betafirmware = (props) => {
               <h3 className="text-dark">
                 <small className="d-block mb-3 text-black-50">Version</small>{" "}
                 <span>
-                  6.6.0<small>-Beta0</small>
+                  6.0.0<small>-Beta0</small>
                 </span>
               </h3>
             </div>
@@ -243,6 +243,7 @@ Profile before upgrading (Monitor Settings > User > Profiles)</li>
           </div>
         </div>
       </div> 
+      
     </>
   );
 };
