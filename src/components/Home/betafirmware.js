@@ -4,7 +4,7 @@ const betafirmware = (props) => {
   return (
     <>
        <h2>
-        <strong>SmallHD PageOS 6</strong> <span>Firmware v6.6.0-Beta0</span>
+        <strong>SmallHD PageOS 6</strong> <span>Firmware v6.0.0-Beta0</span>
       </h2>
       <div className="card">
         <div className="card-body">
@@ -72,7 +72,7 @@ Profile before upgrading (Monitor Settings > User > Profiles)</li>
             <div className="modal-header">
               <h2 className="modal-title" id="exampleModalLabel">
                 <strong>SmallHD PageOS 6</strong>{" "}
-                <span>Firmware v6.6.0-Beta0</span>
+                <span>Firmware v6.0.0-Beta0</span>
               </h2>
               <button
                 type="button"
