@@ -41,7 +41,7 @@ const BetaFirmware = (props) => {
   return (
     <>
       <h2>
-        <strong>SmallHD PageOS 6</strong> <span>Firmware v6.0.0-Beta0</span>
+        <strong>SmallHD PageOS 6</strong> <span>Firmware v6.0.0-Beta1</span>
       </h2>
       <div className="card">
         <div className="card-body">
@@ -50,14 +50,14 @@ const BetaFirmware = (props) => {
               <h3 className="text-dark">
                 <small className="d-block mb-3 text-black-50">Version</small>{" "}
                 <span>
-                  6.0.0<small>-Beta0</small>
+                  6.0.0<small>-Beta1</small>
                 </span>
               </h3>
             </div>
             <div className="col-md-7">
               <h3 className="text-dark">
                 <small className="d-block mb-3 text-black-50">Updated on</small>{" "}
-                29th May, 2024
+                14th Aug, 2024
               </h3>
             </div>
           </div>
@@ -66,7 +66,7 @@ const BetaFirmware = (props) => {
           </h2>
           <ul className="list-txt">
             <li>This is NOT a full release update and should NOT be used for critical content creation</li>
-            <li>There may be some unknown bugs with v6.0.0 Beta0</li>
+            <li>There may be some unknown bugs with v6.0.0 Beta1</li>
             <li>
               Please note which firmware version you are currently using and save your monitor
               Profile before upgrading (Monitor Settings > User > Profiles)
@@ -115,7 +115,7 @@ const BetaFirmware = (props) => {
             <div className="modal-header">
               <h2 className="modal-title" id="exampleModalLabel">
                 <strong>SmallHD PageOS 6</strong>{" "}
-                <span>Firmware v6.0.0-Beta0</span>
+                <span>Firmware v6.0.0-Beta1</span>
               </h2>
               {/* <button
                 type="button"
@@ -133,7 +133,7 @@ const BetaFirmware = (props) => {
                 </h2>
                 <ul className="list-txt">
                   <li>This is NOT a full release update and should NOT be used for critical content creation</li>
-                  <li>There may be some unknown bugs with v6.0.0 Beta0</li>
+                  <li>There may be some unknown bugs with v6.0.0 Beta1</li>
                   <li>
                     Please note which firmware version you are currently using and save your monitor
                     Profile before upgrading (Monitor Settings > User > Profiles)
@@ -227,6 +227,27 @@ const BetaFirmware = (props) => {
                   </li>
                   <li>Color Pipes now support the following additional white points: D93, D56, D60</li>
                   <li>When function button tools are deactivated, they are removed from the toolbar</li>
+               <li><strong>Beta 1</strong> Manual Adjustments may now be tuned per-Color-Pipe </li>
+                <ul>
+                  <li>By default, everything will work as it did in previous versions</li>
+                  <li>Calibration settings menu now has an option to enable “manual adjustment sets”</li>
+                  <li>When exposed, there will be 8 sets of manual adjustments that may be
+configured on the monitor. Factory and User calibrations must each be assigned
+to one of those 8 sets</li>
+                  <li>Color Pipes may also be assigned to a manual adjustment set. By default, each
+Color Pipe will use the manual adjustment set of the current calibration. However,
+they can be configured to instead override that value with a different set of
+manual adjustments</li>
+                 
+                
+                </ul>
+                <li><strong>Beta 1</strong> Function Button Tooltips now indicate function state (on vs off)</li>
+                <li><strong>Beta 1</strong> Exposure Assist legend may now be placed vertically</li>
+                <li><strong>Beta 1</strong> Opening the Studio Brightness menu no longer automatically displays a white
+                patch</li>
+                <li><strong>Beta 1</strong> Adjusted the EL Zone scale, replacing the colors of white and black with light red
+                and dark purple</li>
+                <li><strong>Beta 1</strong> Allow users to alter the record tally UI element’s appearance in the Metadata tool</li>
                 </ul>
               </div>
               <div className="mb-4">
@@ -237,10 +258,29 @@ const BetaFirmware = (props) => {
                    <li>Fixed bug causing User Conversion LUTs in Color Pipes to be applied incorrectly</li>
                   <li>Resolved audio data from a BlackMagic PIX-E5 not being detected by SmallHD monitors</li>
                   <li>Resolved interactions between the Input Tool and Image Capture on Record Start</li>
-                  <li>Camera Control - Scrubbing in playback no longer stops playback functionality for ARRI Mini</li>
-                  <li>Fixed a bug causing 4K Production Monitors to load the last toolset used on a different Page</li>
-                  <li>Resolved issue that would prevent tools from deactivating if accessed via the main toolbar</li>
-                  <li>Fixed inconsistencies when enabling/disabling a custom image capture frame guide</li>
+                  <li>Camera Control - Scrubbing in playback mode on ARRI cameras no longer changes
+                  Pages</li>
+                  <li>Fixed a case of incorrect Color Pipes being applied to Multi Pages, when more than one
+                  multi-view page was present on the monitor.</li>
+                  <li>Resolved flickering on a Multi Page when receiving some PsF formats</li>
+                  <li>Fixed issues with 8 channel SDI Audio on 4K production monitors</li>
+                  <li>Fixed audio issues when more than 8 channels are present</li>
+<li>Super Pixel Scaling was not working, monitors continued to use interpolation</li>
+<li>Resolved video range issues that came about when different color pipes were assigned different video ranges</li>
+<li>Resolved discrepancies between Color Picker and Exposure Assist</li>
+<li>Restored the missing “Burn-in Recovery” settings element</li>
+<li>Lock Switches now function after reboot</li>
+<li>Focus Assist lines now persist after a reboot</li>
+<li>Focus Assist now functions correctly when bound to a function button</li>
+<li>Fixed rare instances of legal range video not being displayed correctly in calibration wizard</li>
+<li>On 4K Production Monitors, Image Overlay no longer dims the image when the source media is removed</li>
+<li>Fixed Low Voltage Warning sometimes not appearing</li>
+<li>General UI improvements</li>
+<li><strong>Beta 1 -</strong> Fixed several video format issues</li>
+<li><strong>Beta 1 -</strong> Ultra 5 TX Output toggle no longer causes wireless video issues</li>
+<li><strong>Beta 1 -</strong> Image Overlay no longer obscures aspect and safe guides</li>
+<li><strong>Beta 1 -</strong> Activating Image Capture no longer causes the color picker tool to deactivate</li>
+
                 </ul>
               </div>
               <div className="mb-4">
