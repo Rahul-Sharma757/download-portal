@@ -222,7 +222,7 @@ const BetaFirmware = (props) => {
                           <li>Options include: Grayscale, Transparent (Clean), or Spectrum</li>
                         </ul>
                       </li>
-                      <li>Allow users to load custom exposure maps as an image file from removable media</li>
+                      <li>Allow users to load custom exposure maps as an image file (1024 wide .png) from removable media</li>
                     </ul>
                   </li>
                   <li>Color Pipes now support the following additional white points: D93, D56, D60</li>
@@ -283,7 +283,7 @@ manual adjustments</li>
 
                 </ul>
               </div>
-              <div className="mb-4">
+              {/* <div className="mb-4">
                 <h2 className="d-inline-block">
                   <strong>Beta Known Issues:</strong>
                 </h2>
@@ -302,7 +302,7 @@ manual adjustments</li>
                   <li>Changing a white point in a Color Pipe affects all previously set custom Look LUTs</li>
                   <li>Long duration HDMI connections causing Image Capture to fail</li>
                 </ul>
-              </div>
+              </div> */}
             </div>
             <div className="modal-footer">
               <a
