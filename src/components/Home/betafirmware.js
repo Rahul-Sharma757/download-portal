@@ -92,7 +92,7 @@ const BetaFirmware = (props) => {
               href="#"
               onClick={() =>
                 props.showpopupdownload(
-                  "https://downloads.smallhd.com/dev/backend-node-server/firmware/beta/SmallHD_PageOS_V6-0-0-beta-0.zip"
+                  "https://downloads.smallhd.com/dev/backend-node-server/firmware/beta/SmallHD_PageOS_V6-0-0-beta-1.zip"
                 )
               }
               className="btn btn-primary text-white"
@@ -309,7 +309,7 @@ manual adjustments</li>
               target="_blank"
               onClick={() =>
                 props.showpopupdownload(
-                  "https://downloads.smallhd.com/dev/backend-node-server/firmware/beta/SmallHD_PageOS_V6-0-0-beta-0.zip"
+                  "https://downloads.smallhd.com/dev/backend-node-server/firmware/beta/SmallHD_PageOS_V6-0-0-beta-1.zip"
                 )
               }
               className="btn btn-primary text-white" data-dismiss="modal" aria-label="Close"
