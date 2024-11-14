@@ -556,7 +556,7 @@ const Loadlisting = (props) => {
                     (props.dataList.length) ?
                         props.dataList.map((firmwareList, j) => (
                             <>
-                                <h2 key={j}><strong>SmallHD</strong> PageOS{props.dataList[j].versionData ? props.dataList[j].versionData[0].version.charAt(0) : ''} <span> Firmware</span></h2>
+                                <h2 key={j}><strong>SmallHD</strong> PageOS {props.dataList[j].versionData ? props.dataList[j].versionData[0].version.charAt(0) : ''} <span> Firmware</span></h2>
                                 {/*Section to print only first firmware item*/}
                                 {props.dataList[j].versionData.map((firmware, i) => (
                                     (i == 0 ?
